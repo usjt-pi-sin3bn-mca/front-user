@@ -1,0 +1,36 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+
+body, ion-content {
+  margin: 0;
+  padding: 0;
+  
+  background: rgba(40,101,150,1);
+  background: -moz-linear-gradient(top, rgba(40,101,150,1) 0%, rgba(22,168,168,1) 48%, rgba(0,127,72,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(40,101,150,1)), color-stop(48%, rgba(22,168,168,1)), color-stop(100%, rgba(0,127,72,1)));
+  background: -webkit-linear-gradient(top, rgba(40,101,150,1) 0%, rgba(22,168,168,1) 48%, rgba(0,127,72,1) 100%);
+  background: -o-linear-gradient(top, rgba(40,101,150,1) 0%, rgba(22,168,168,1) 48%, rgba(0,127,72,1) 100%);
+  background: -ms-linear-gradient(top, rgba(40,101,150,1) 0%, rgba(22,168,168,1) 48%, rgba(0,127,72,1) 100%);
+  background: linear-gradient(to bottom, rgba(40,101,150,1) 0%, rgba(22,168,168,1) 48%, rgba(0,127,72,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#286596', endColorstr='#007f48', GradientType=0 );
+  
+  
+  .scroll-content {
+    padding: 0 !important;
+  }
+}
