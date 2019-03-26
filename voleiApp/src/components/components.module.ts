@@ -1,8 +1,11 @@
 import { NgModule } from '@angular/core';
 import { FormLoginComponent } from './form-login/form-login';
+import { PlacarOnlineComponent } from './placar-online/placar-online';
 @NgModule({
-	declarations: [FormLoginComponent],
+	declarations: [FormLoginComponent,
+    PlacarOnlineComponent],
 	imports: [],
-	exports: [FormLoginComponent]
+	exports: [FormLoginComponent,
+    PlacarOnlineComponent]
 })
 export class ComponentsModule {}
