@@ -24,13 +24,17 @@ import { PlacarOnlineComponent } from '../components/placar-online/placar-online
     ListPage,
     CadastroPage,
 <<<<<<< HEAD
+<<<<<<< HEAD
     TestPage,
     CuponsDescontosComponent,
     LojaTorcidaComponent,
     PlacarOnlineComponent
 =======
     TestPage
->>>>>>> Placar online
+>>>>>>>
+=======
+    TestPage
+>>>>>>>
   ],
   imports: [
     BrowserModule,
@@ -44,13 +48,17 @@ import { PlacarOnlineComponent } from '../components/placar-online/placar-online
     ListPage,
     CadastroPage,
 <<<<<<< HEAD
+<<<<<<< HEAD
     TestPage,
     CuponsDescontosComponent,
     LojaTorcidaComponent,
     PlacarOnlineComponent
 =======
     TestPage
->>>>>>> Placar online
+>>>>>>>
+=======
+    TestPage
+>>>>>>>
   ],
   providers: [
     StatusBar,
