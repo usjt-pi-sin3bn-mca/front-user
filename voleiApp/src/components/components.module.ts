@@ -14,7 +14,6 @@ import { PlacarOnlineComponent } from './placar-online/placar-online';
 	exports: [FormLoginComponent,
 	CuponsDescontosComponent,	
     LojaTorcidaComponent,
-
 	FooterAppVoleiComponent,
 	PlacarOnlineComponent]
 })
