@@ -5,20 +5,21 @@
   <div class="labels">
     <label id="lblTime" type="text">O app da torcida do</label>
     <p><label id="lblVolei" type="text">São Judas Voleibol!</label></p>
-  </div>  
+  </div>
 
-    <form class="form-login">   
-          
-        <ion-item>
-          <input type="text" placeholder="Digite seu email.">
-        </ion-item>
-        
-        <ion-item>
-          <input type="password" placeholder="Digite sua senha.">
-        </ion-item>
+  <form class="form-login">
+    <div id="inpLogin" text-center>
+      <input type="text" style="min-width:100%;" placeholder="Digite seu email.">
+    </div>
 
-        <button id="btnAcessar" ion-button color="dark" ion-button full style="text-align:center;">Acessar</button>
-        <ion-label id="lblEsqueceu">Esqueceu a senha link</ion-label>
-    </form>
+    <div id="inpSenha" text-center>
+      <input type="password" style="min-width:100%;" placeholder="Digite sua senha.">
+    </div>
+
+    <button id="btnAcessar" ion-button color="dark" ion-button full style="text-align:center;">Acessar</button>
+      <div class="campoCadastro">
+        <ion-label id="lblPrimeiroAcesso">Primeiro Acesso?</ion-label>
+          <a href="https://www.google.com/" id="linkCadastro">Cadastre-se aqui!</a>
+      </div>
+  </form>
 </ion-content>
-  
