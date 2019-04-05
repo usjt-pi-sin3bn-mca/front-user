@@ -1,18 +1,25 @@
-<!--
-  Generated template for the LoginPage page.
+<ion-content class="bg">
 
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
-<ion-header>
+  <img id="imgLogo" src="assets/imgs/logo-usjt.png">
+  
+  <div class="labels">
+    <label id="lblTime" type="text">O app da torcida do</label>
+    <p><label id="lblVolei" type="text">São Judas Voleibol!</label></p>
+  </div>
 
-  <ion-navbar>
-    <ion-title>login</ion-title>
-  </ion-navbar>
+  <form class="form-login">
+    <div id="inpLogin" text-center>
+      <input type="text" style="min-width:100%;" placeholder="Digite seu email.">
+    </div>
 
-</ion-header>
+    <div id="inpSenha" text-center>
+      <input type="password" style="min-width:100%;" placeholder="Digite sua senha.">
+    </div>
 
-
-<ion-content padding>
-
+    <button id="btnAcessar" ion-button color="dark" ion-button full style="text-align:center;">ACESSAR</button>
+      <div class="campoCadastro">
+        <ion-label id="lblPrimeiroAcesso">Primeiro Acesso?</ion-label>
+          <a href="https://www.google.com/" id="linkCadastro">Cadastre-se aqui!</a>
+      </div>
+  </form>
 </ion-content>
