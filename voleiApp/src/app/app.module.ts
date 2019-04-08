@@ -12,7 +12,6 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HttpClientModule } from '@angular/common/http';
-import { TestPage } from '../pages/test/test';
 import { CuponsDescontosComponent } from '../components/cupons-descontos/cupons-descontos';
 import { LojaTorcidaComponent } from '../components/loja-torcida/loja-torcida';
 import { PlacarOnlineComponent } from '../components/placar-online/placar-online';
@@ -23,18 +22,11 @@ import { PlacarOnlineComponent } from '../components/placar-online/placar-online
     HomePage,
     ListPage,
     CadastroPage,
-<<<<<<< HEAD
-<<<<<<< HEAD
     TestPage,
     CuponsDescontosComponent,
     LojaTorcidaComponent,
     PlacarOnlineComponent
-=======
-    TestPage
->>>>>>>
-=======
-    TestPage
->>>>>>>
+
   ],
   imports: [
     BrowserModule,
@@ -47,18 +39,10 @@ import { PlacarOnlineComponent } from '../components/placar-online/placar-online
     HomePage,
     ListPage,
     CadastroPage,
-<<<<<<< HEAD
-<<<<<<< HEAD
     TestPage,
     CuponsDescontosComponent,
     LojaTorcidaComponent,
     PlacarOnlineComponent
-=======
-    TestPage
->>>>>>>
-=======
-    TestPage
->>>>>>>
   ],
   providers: [
     StatusBar,
