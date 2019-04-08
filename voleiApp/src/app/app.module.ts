@@ -12,6 +12,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HttpClientModule } from '@angular/common/http';
+import { PlacarOnlineComponent } from '../components/placar-online/placar-online';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { HttpClientModule } from '@angular/common/http';
     HomePage,
     ListPage,
     CadastroPage,
-    TestPage
+    TestPage,
+    PlacarOnlineComponent
   ],
   imports: [
     BrowserModule,

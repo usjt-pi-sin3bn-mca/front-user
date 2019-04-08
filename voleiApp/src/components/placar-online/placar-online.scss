@@ -1,140 +1,133 @@
-placar-online {
-    padding: 0;
-  
-  }
-  
-  .background h3 {
-    color: #fff;
-    width: 100%;
-    text-align: center;
-  }
+// resets
+p,
+h2 {
+  margin: 0;
+}
+
+//component styles
+.background h3 {
+  color: #fff;
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-direction-row {
+  flex-direction: row;
+}
+
+.flex-direction-column {
+  flex-direction: column;
+}
+
+.position-central{
+  width: 92%;
+  height: calc(100vh - 60px);
+  border-radius: 25px;
+  background-color: white;
+  margin: 10px auto;    
   
 
-  .position-central{
-    width: 438px;
-    height: 726px;
-    border-radius: 25px;
-    background-color: white;
-    align-content: center;
-    margin: 0 auto;
-  }
-  
-
-  .position-icone_placar {
-    padding:9px;
+  .icone-placar {
+    width: 40px;
+    height: 40px;
+    margin: 9px;
   }
   
   .position-placar-online {
-    position: relative;
-    left:22%;
-    top:-8.3%;
-  
+    align-items: center;    
   }
   
-  .PLACAR-ONLINE {
-    width: 250px;
-    height: 50px;
+  .placar-online {
     font-family: Arial;
-    font-size: 28px;
+    font-size: 20px;
     font-weight: bold;
     text-align: center;
     color: #000000;
-  
   }
-  
-  
-  .position-super-liga{
-    position: relative;
-    top: -11%;
-    left: 24.5%;
-  }
-  
-  .super-liga {
-    width: 250px;
-    height: 25px;
-    font-weight: bold;
-    font-family: Arial;
-    font-size: 21px;
-    text-align: left;
-    color: #000000;
-  }
-  
 
-  .position-rodada{
-    position: relative;
-    top: -14%;
-    left: 24.5%;
-  }
-  
-  .rodada {
-    width: 178px;
-    height: 11px;
-    font-family: Arial;
-    font-size: 14.5px;
-    text-align: left;
-    color: #000000;
-  }
-  
+  .pai-subtitulos{
+    align-items:center;
+    white-space: nowrap;
+    
+    
+    .position-filhos{
+      align-items:flex-start;
+    }
+    
+    .super-liga {
+      font-weight: bold;
+      font-family: Arial;
+      font-size: 12px;
+      color: #000000;
+    }
+    
+    .rodada {
+      font-family: Arial;
+      font-size: 11px;
+      color: #000000;
+    }
 
-  .position-jogo-numero {
-    position: relative;
-    top: -17.6%;
-    left: 47.6%;
-  }
-  
-  .jogo-numero{
-    width: 178px;
-    height: 11px;
-    font-family: Arial;
-    font-size: 14.5px;
-    text-align: left;
-    color: #000000;
-  }
-  
+    .jogo-numero{
+      font-family: Arial;
+      font-size: 11px;
+      color: #000000;
+    }
+    
+    .position-ginasio {
+      margin: 5px 0px 0px 0px;
+   }
+    
+    .ginasio {
+      font-family: Arial;
+      font-size: 11px;
+      color: #000000;
+    }
+    
+    .data{
+      font-family: Arial;
+      font-size: 11px;
+      color: #000000;
+    }
 
-  .position-ginasio {
-    position: relative;
-    top: -17%;
-    left: 24.8%;
+    .horario{
+      font-family: Arial;
+      font-size: 11px;
+      color: #000000;
+    }
+    
   }
-  
-  .ginasio {
-    width: 197px;
-    height: 14px;
-    font-family: Arial;
-    font-size: 14.5px;
-    text-align: left;
-    color: #000000;
-  }
-  
 
-  .position-data{
-    position: relative;
-    top: -18.8%;
-    left: 25%;
+  .pai-times-partida{
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+
+    .time1-partida{
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .escudos{
+      width: 90x;
+      height:90px; 
+     }
+     
+    .versus-x{
+      font-family: Arial; 
+      font-size: 30px;
+      color: #221f20; 
+    }
+
+    .time2-partida{
+      align-items: center;
+      flex-direction: column;
+    }
   }
-  
-  .data{
-    width: 125px;
-    height: 14px;
-    font-family: Arial;
-    font-size: 14.5px;
-    text-align: left;
-    color: #000000;
-  }
-  
-  
-  .position-horario{
-    position: relative;
-    top: -22.8%;
-    left: 44.4%;
-  }
-  
-  .horario{
-    width: 125px;
-    height: 14px;
-    font-family: Arial;
-    font-size: 14.5px;
-    text-align: left;
-    color: #000000;
-  }
+}
+
+
+
+
