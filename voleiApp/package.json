@@ -14,7 +14,7 @@
   "dependencies": {
     "@angular/common": "5.0.0",
     "@angular/compiler": "5.0.0",
-    "@angular/compiler-cli": "^7.2.11",
+    "@angular/compiler-cli": "5.0.0",
     "@angular/core": "5.0.0",
     "@angular/forms": "5.0.0",
     "@angular/http": "5.0.0",
@@ -33,6 +33,7 @@
   },
   "devDependencies": {
     "@ionic/app-scripts": "^3.2.3",
+    "@ionic/cli-plugin-ionic-angular": "1.4.1",
     "typescript": "2.4.2"
   },
   "description": "An Ionic project"

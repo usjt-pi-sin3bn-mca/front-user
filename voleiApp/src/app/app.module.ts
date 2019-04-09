@@ -13,6 +13,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { HttpClientModule } from '@angular/common/http';
 import { TestPage } from '../pages/test/test';
 import { CuponsDescontosComponent } from '../components/cupons-descontos/cupons-descontos';
+import { LojaTorcidaComponent } from '../components/loja-torcida/loja-torcida';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { CuponsDescontosComponent } from '../components/cupons-descontos/cupons-
     ListPage,
     CadastroPage,
     TestPage,
-    CuponsDescontosComponent
+    CuponsDescontosComponent,
+    LojaTorcidaComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +37,8 @@ import { CuponsDescontosComponent } from '../components/cupons-descontos/cupons-
     ListPage,
     CadastroPage,
     TestPage,
-    CuponsDescontosComponent
+    CuponsDescontosComponent,
+    LojaTorcidaComponent
   ],
   providers: [
     StatusBar,
