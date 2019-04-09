@@ -6,14 +6,15 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { CadastroPage } from '../pages/cadastro/cadastro';
+import { TestPage } from '../pages/test/test';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HttpClientModule } from '@angular/common/http';
-import { TestPage } from '../pages/test/test';
 import { CuponsDescontosComponent } from '../components/cupons-descontos/cupons-descontos';
 import { LojaTorcidaComponent } from '../components/loja-torcida/loja-torcida';
+import { PlacarOnlineComponent } from '../components/placar-online/placar-online';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { LojaTorcidaComponent } from '../components/loja-torcida/loja-torcida';
     CadastroPage,
     TestPage,
     CuponsDescontosComponent,
-    LojaTorcidaComponent
+    LojaTorcidaComponent,
+    PlacarOnlineComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +40,8 @@ import { LojaTorcidaComponent } from '../components/loja-torcida/loja-torcida';
     CadastroPage,
     TestPage,
     CuponsDescontosComponent,
-    LojaTorcidaComponent
+    LojaTorcidaComponent,
+    PlacarOnlineComponent
   ],
   providers: [
     StatusBar,
