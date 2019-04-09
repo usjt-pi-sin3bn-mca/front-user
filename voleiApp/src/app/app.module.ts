@@ -14,6 +14,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { TestPage } from '../pages/test/test';
 import { CuponsDescontosComponent } from '../components/cupons-descontos/cupons-descontos';
 import { LojaTorcidaComponent } from '../components/loja-torcida/loja-torcida';
+import { PlacarOnlineComponent } from '../components/placar-online/placar-online';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { LojaTorcidaComponent } from '../components/loja-torcida/loja-torcida';
     CadastroPage,
     TestPage,
     CuponsDescontosComponent,
-    LojaTorcidaComponent
+    LojaTorcidaComponent,
+    PlacarOnlineComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +40,8 @@ import { LojaTorcidaComponent } from '../components/loja-torcida/loja-torcida';
     CadastroPage,
     TestPage,
     CuponsDescontosComponent,
-    LojaTorcidaComponent
+    LojaTorcidaComponent,
+    PlacarOnlineComponent
   ],
   providers: [
     StatusBar,

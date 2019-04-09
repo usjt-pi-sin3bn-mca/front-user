@@ -1,0 +1,128 @@
+// resets
+p,
+h2 {
+  margin: 0;
+}
+
+.scroll-content {
+  overflow-y:hidden;
+}
+
+//component styles
+.background h3 {
+  color: #fff;
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-direction-column {
+  flex-direction: column;
+}
+
+.position-central{
+  width: 92%;
+  border-radius: 25px;
+  background-color: white;
+  margin: 10px auto;    
+  
+
+  .icone-placar {
+    width: 40px;
+    height: 40px;
+    margin: 9px;
+  }
+  
+  .position-placar-online {
+    align-items: center;    
+  }
+  
+  .placar-online {
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #000000;
+  }
+
+  .pai-subtitulos{
+    align-items:center;
+    white-space: nowrap;
+    
+    
+    .position-filhos{
+      align-items:flex-start;
+    }
+    
+    .super-liga {
+      font-weight: bold;
+      font-family: Arial;
+      font-size: 12px;
+      color: #000000;
+    }
+    
+    .rodada {
+      font-family: Arial;
+      font-size: 11px;
+      color: #000000;
+    }
+
+    .jogo-numero{
+      font-family: Arial;
+      font-size: 11px;
+      color: #000000;
+    }
+    
+    .position-ginasio {
+      margin: 5px 0px 0px 0px;
+   }
+    
+    .ginasio {
+      font-family: Arial;
+      font-size: 11px;
+      color: #000000;
+    }
+    
+    .data{
+      font-family: Arial;
+      font-size: 11px;
+      color: #000000;
+    }
+
+    .horario{
+      font-family: Arial;
+      font-size: 11px;
+      color: #000000;
+    }
+    
+  }
+
+  .pai-times-partida{
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+
+    .time1-partida{
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .escudos{
+      width: 90x;
+      height:90px; 
+     }
+     
+    .versus-x{
+      font-family: Arial; 
+      font-size: 30px;
+      color: #221f20; 
+    }
+
+    .time2-partida{
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+}
