@@ -1,0 +1,81 @@
+loja-torcida {
+    .content {
+        background-color: white;
+        margin: 10px;
+        border-radius: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        .item {
+            flex: 1;
+            flex-basis: 50%;
+            &.shop {
+                flex: 2;
+                flex-basis: 100%;
+            }
+        }
+        .title {
+            display: flex;
+            img {
+                margin: 10px;
+            }
+            h3 {
+                align-items: center;
+                white-space: nowrap;
+                font-weight: 600;
+                display: inline-flex;
+            }
+        }
+        .intro {
+            margin-left: 30%;
+            h4 {
+                font-weight: normal;
+            }
+        }
+        .shop {
+            display: flex;
+            flex-wrap: wrap;
+            max-height: 240px;
+            overflow: auto;
+            overflow-x: hidden;
+            .product {
+                background-color: #e5e6e7;
+                max-width: 125px;
+                margin-left: 12px;
+                margin-bottom: 20px;
+                border-radius: 25px;
+                text-align: center;
+                p {
+                    margin:0;
+                    margin-left: 15px;
+                    text-align:left;
+                }
+                img {
+                    margin: 10px 0;
+                }
+                .product-name {
+                    font-size:14px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                }
+                .product-price {
+                    font-size: 13px;
+                    color: #0f558b;
+                }
+                .product-description {
+                    font-size: 11px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        .bolas {
+            display: flex;
+            margin-left: 32px;
+            span {
+                margin-left: 5px;
+                background-color: #0f558b;
+                border-radius: 50px;
+                padding: 15px;
+            }
+        }
+    }
+}
