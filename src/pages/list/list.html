@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Lista</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <button ion-item *ngFor="let livro of lista">
+      <b>Nome do livro/filme:</b> {{livro.title}}
+    </button>
+  </ion-list>
+  <div *ngIf="selectedItem">
+    You navigated here from <b>{{livro.title}}</b>
+  </div>
+</ion-content>
