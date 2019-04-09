@@ -26,7 +26,6 @@ import { PlacarOnlineComponent } from '../components/placar-online/placar-online
     CuponsDescontosComponent,
     LojaTorcidaComponent,
     PlacarOnlineComponent
-
   ],
   imports: [
     BrowserModule,
