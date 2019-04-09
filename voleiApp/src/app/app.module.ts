@@ -11,13 +11,17 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HttpClientModule } from '@angular/common/http';
+import { TestPage } from '../pages/test/test';
+import { EspacoTorcedorComponent } from '../components/espaco-torcedor/espaco-torcedor';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     ListPage,
-    CadastroPage
+    CadastroPage,
+    TestPage,
+    EspacoTorcedorComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +33,9 @@ import { HttpClientModule } from '@angular/common/http';
     MyApp,
     HomePage,
     ListPage,
-    CadastroPage
+    CadastroPage,
+    TestPage,
+    EspacoTorcedorComponent
   ],
   providers: [
     StatusBar,
