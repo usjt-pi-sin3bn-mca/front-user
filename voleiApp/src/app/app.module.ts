@@ -14,6 +14,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { TestPage } from '../pages/test/test';
 import { CuponsDescontosComponent } from '../components/cupons-descontos/cupons-descontos';
 import { LojaTorcidaComponent } from '../components/loja-torcida/loja-torcida';
+import { AppHeaderComponent } from '../components/app-header/app-header';
+
 
 @NgModule({
   declarations: [
@@ -23,12 +25,14 @@ import { LojaTorcidaComponent } from '../components/loja-torcida/loja-torcida';
     CadastroPage,
     TestPage,
     CuponsDescontosComponent,
-    LojaTorcidaComponent
+    LojaTorcidaComponent,
+    AppHeaderComponent
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
     HttpClientModule
+    
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -38,7 +42,8 @@ import { LojaTorcidaComponent } from '../components/loja-torcida/loja-torcida';
     CadastroPage,
     TestPage,
     CuponsDescontosComponent,
-    LojaTorcidaComponent
+    LojaTorcidaComponent,
+    AppHeaderComponent
   ],
   providers: [
     StatusBar,
