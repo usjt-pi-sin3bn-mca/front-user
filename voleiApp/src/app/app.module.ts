@@ -11,13 +11,18 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HttpClientModule } from '@angular/common/http';
+import { PlacarSetsComponent } from '../components/placar-sets/placar-sets';
+import { TestPage } from '../pages/test/test';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     ListPage,
-    CadastroPage
+    CadastroPage,
+    TestPage,
+    PlacarSetsComponent
+
   ],
   imports: [
     BrowserModule,
@@ -29,7 +34,8 @@ import { HttpClientModule } from '@angular/common/http';
     MyApp,
     HomePage,
     ListPage,
-    CadastroPage
+    CadastroPage,
+    TestPage
   ],
   providers: [
     StatusBar,
