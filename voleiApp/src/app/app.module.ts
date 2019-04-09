@@ -14,7 +14,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { HttpClientModule } from '@angular/common/http';
 import { CuponsDescontosComponent } from '../components/cupons-descontos/cupons-descontos';
 import { LojaTorcidaComponent } from '../components/loja-torcida/loja-torcida';
+import { AppHeaderComponent } from '../components/app-header/app-header';
 import { PlacarOnlineComponent } from '../components/placar-online/placar-online';
+
 
 @NgModule({
   declarations: [
@@ -25,12 +27,14 @@ import { PlacarOnlineComponent } from '../components/placar-online/placar-online
     TestPage,
     CuponsDescontosComponent,
     LojaTorcidaComponent,
+    AppHeaderComponent,
     PlacarOnlineComponent
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
     HttpClientModule
+    
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -41,6 +45,7 @@ import { PlacarOnlineComponent } from '../components/placar-online/placar-online
     TestPage,
     CuponsDescontosComponent,
     LojaTorcidaComponent,
+    AppHeaderComponent,
     PlacarOnlineComponent
   ],
   providers: [
