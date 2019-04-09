@@ -8,3 +8,61 @@ page-home {
   width: 100%;
   text-align: center;
 }
+
+.box {
+  width: fit-content;
+  height: auto;
+  background-color: #fff;
+  border-radius: 30px !important;
+  padding-left: 30px;
+  padding-right: 5px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+
+.icon-box {
+  background-color: #1d5286;
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  margin-left: -22px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  margin-top: 0px;
+  position: fixed;
+  white-space: nowrap;
+  font-family: Ebrima;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+
+.titulo {
+  width: auto;
+  font-family: Arial;
+  font-size: 15.5px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  padding-left: 35px;
+  color: #000000;
+}
+
+.subtitulo {
+  font-size: 12px;
+  padding-left: 35px;
+}
+
+.SEUS-PONTOS-Acompanhe-a-sua-pontuao-no-programa-de-benefcios-Torcida-SJV .text-style-2 {
+  font-weight: bold;
+}
