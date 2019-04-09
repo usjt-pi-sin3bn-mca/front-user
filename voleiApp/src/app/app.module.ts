@@ -6,6 +6,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { CadastroPage } from '../pages/cadastro/cadastro';
+import { TestPage } from '../pages/test/test';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -22,10 +23,14 @@ import { PlacarOnlineComponent } from '../components/placar-online/placar-online
     HomePage,
     ListPage,
     CadastroPage,
+<<<<<<< HEAD
     TestPage,
     CuponsDescontosComponent,
     LojaTorcidaComponent,
     PlacarOnlineComponent
+=======
+    TestPage
+>>>>>>> Placar online
   ],
   imports: [
     BrowserModule,
@@ -38,10 +43,14 @@ import { PlacarOnlineComponent } from '../components/placar-online/placar-online
     HomePage,
     ListPage,
     CadastroPage,
+<<<<<<< HEAD
     TestPage,
     CuponsDescontosComponent,
     LojaTorcidaComponent,
     PlacarOnlineComponent
+=======
+    TestPage
+>>>>>>> Placar online
   ],
   providers: [
     StatusBar,
