@@ -8,9 +8,13 @@ import { ListPage } from '../pages/list/list';
 import { CadastroPage } from '../pages/cadastro/cadastro';
 import { TestPage } from '../pages/test/test';
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> Placar online
+=======
+
+>>>>>>> 33031fe4bd7858b6e4db06dc782e6050d6570d87
 
 @Component({
   templateUrl: 'app.html'
@@ -31,10 +35,14 @@ export class MyApp {
       { title: 'Lista', component: ListPage },
       { title: 'Cadastro', component: CadastroPage },
 <<<<<<< HEAD
+<<<<<<< HEAD
       { title: 'Test', component: TestPage }
 =======
       { title: 'Teste', component: TestPage }
 >>>>>>> Placar online
+=======
+      { title: 'Teste', component: TestPage }
+>>>>>>> 33031fe4bd7858b6e4db06dc782e6050d6570d87
     ];
 
   }

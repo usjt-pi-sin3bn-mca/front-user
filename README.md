@@ -3,12 +3,12 @@ Repositório destinado ao desenvolvimento front-end do projeto integrado do curs
 
 
 ## O procedimento de desenvolvimento:
-* 1 - clonar o repositório front-end-user
+* 1 - clonar o repositório front-user
 * 2 - entrar na pasta voleiApp e dar um npm install
 * 3 - criar uma branch para desenvolver seu componente (git checkout -b "nome do meu componente")
-* 4 - criar o componente via ionic-cli (ionic generate component "nome do component"
+* 4 - criar o componente via ionic-cli (ionic generate component "nome do componente"
 * 5 - fazer a chamada do componente na página de teste
-* 6 - ao finalizar todo o componente, realizar o comando push origin "nome da branch que criei"
+* 6 - ao finalizar todo o componente, realizar o comando git push origin "nome da branch que criei"
 * 7 - aguardar aprovação via pull request
 
 ## Material de apoio
