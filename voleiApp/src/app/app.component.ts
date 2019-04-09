@@ -7,6 +7,7 @@ import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { CadastroPage } from '../pages/cadastro/cadastro';
 import { TestPage } from '../pages/test/test';
+import { EspacoTorcedorComponent } from '../components/espaco-torcedor/espaco-torcedor';
 
 
 @Component({
@@ -27,7 +28,8 @@ export class MyApp {
       { title: 'Home', component: HomePage },
       { title: 'Lista', component: ListPage },
       { title: 'Cadastro', component: CadastroPage },
-      { title: 'Test', component: TestPage }
+      { title: 'Test', component: TestPage },
+      { title: 'Espaço Torcedor', component: EspacoTorcedorComponent }
     ];
 
   }

@@ -12,6 +12,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HttpClientModule } from '@angular/common/http';
+import { EspacoTorcedorComponent } from '../components/espaco-torcedor/espaco-torcedor';
 
 import { CuponsDescontosComponent } from '../components/cupons-descontos/cupons-descontos';
 import { LojaTorcidaComponent } from '../components/loja-torcida/loja-torcida';
@@ -19,7 +20,6 @@ import { AppHeaderComponent } from '../components/app-header/app-header';
 import { PlacarOnlineComponent } from '../components/placar-online/placar-online';
 import { AppHotNewsComponent } from '../components/app-hot-news/app-hot-news';
 import { PlacarSetsComponent } from '../components/placar-sets/placar-sets';
-import { TestPage } from '../pages/test/test';
 
 @NgModule({
   declarations: [
@@ -28,12 +28,13 @@ import { TestPage } from '../pages/test/test';
     ListPage,
     CadastroPage,
     TestPage,
-    PlacarSetsComponent
+    PlacarSetsComponent,
     CuponsDescontosComponent,
     LojaTorcidaComponent,
     AppHeaderComponent,
     PlacarOnlineComponent,
-    AppHotNewsComponent
+    AppHotNewsComponent,
+    EspacoTorcedorComponent
   ],
   imports: [
     BrowserModule,
@@ -52,7 +53,8 @@ import { TestPage } from '../pages/test/test';
     LojaTorcidaComponent,
     AppHeaderComponent,
     PlacarOnlineComponent,
-    AppHotNewsComponent
+    AppHotNewsComponent,
+    EspacoTorcedorComponent
   ],
   providers: [
     StatusBar,

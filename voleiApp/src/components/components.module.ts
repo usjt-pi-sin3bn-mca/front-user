@@ -7,16 +7,19 @@ import { AppHeaderComponent } from './app-header/app-header';
 import { FooterAppVoleiComponent } from './footer-app-volei/footer-app-volei';
 import { PlacarOnlineComponent } from './placar-online/placar-online';
 import { AppHotNewsComponent } from './app-hot-news/app-hot-news';
+import { EspacoTorcedorComponent } from './espaco-torcedor/espaco-torcedor'
 
 @NgModule({
 	declarations: [FormLoginComponent,
     LojaTorcidaComponent,
-  CuponsDescontosComponent,
-	FooterAppVoleiComponent,
-  AppHeaderComponent,
-	PlacarOnlineComponent,
-  AppHotNewsComponent,
-  PlacarSetsComponent],
+    CuponsDescontosComponent,
+    FooterAppVoleiComponent,
+    AppHeaderComponent,
+    PlacarOnlineComponent,
+    AppHotNewsComponent,
+    PlacarSetsComponent,
+    EspacoTorcedorComponent
+  ],
 	imports: [],
 	exports: [FormLoginComponent,
 	CuponsDescontosComponent,	
@@ -25,7 +28,8 @@ import { AppHotNewsComponent } from './app-hot-news/app-hot-news';
 	PlacarOnlineComponent,
   AppHeaderComponent,
   AppHotNewsComponent,
-  PlacarSetsComponent
+  PlacarSetsComponent,
+  EspacoTorcedorComponent
   ]
 })
 export class ComponentsModule {}
