@@ -7,7 +7,6 @@ import { PlacarOnlineComponent } from './placar-online/placar-online';
 
 @NgModule({
 	declarations: [FormLoginComponent,
-<<<<<<< HEAD
     LojaTorcidaComponent,
 	FooterAppVoleiComponent,
 	PlacarOnlineComponent],
@@ -17,13 +16,5 @@ import { PlacarOnlineComponent } from './placar-online/placar-online';
     LojaTorcidaComponent,
 	FooterAppVoleiComponent,
 	PlacarOnlineComponent]
-=======
-    PlacarOnlineComponent,
-    PlacarOnlineComponent],
-	imports: [],
-	exports: [FormLoginComponent,
-    PlacarOnlineComponent,
-    PlacarOnlineComponent]
->>>>>>> Placar online
 })
 export class ComponentsModule {}
