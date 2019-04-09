@@ -1,0 +1,105 @@
+cupons-descontos {
+    // reset styles
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    p {
+        margin: 0;
+        padding:0;
+    }
+
+    // general syles
+    .content {
+        border-radius: 30px;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+
+        .intro { 
+            display: flex;
+            align-items: center;
+            padding-bottom: 9px;
+
+            .intro-texto-content {
+                padding-left:90px;
+
+            }
+
+            img {
+                margin: 5px;
+            }
+
+            h5 {
+                margin-left: 8px;
+                font-size:28px;
+            }
+        }
+
+        .area-descontos {
+            margin-top: 5%;
+            padding-left: 34px;
+            padding-right: 34px;
+
+            .parceiro-descontos {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom:10px;
+                background-color: #b3b3b3;
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+
+                div {
+                    flex: 1;
+                }
+
+                .icone-parceiro-desconto {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;                     
+                    border-radius: 10px;
+                    margin: 4px;
+                }
+
+                .parceiro-desconto-intro {
+                    text-align: left;
+                    flex: 3;
+                    padding: 10px;
+
+                    h4 {
+                        font-size: 13px; 
+                        margin:0;
+                    }
+
+                    p {
+                        margin-top: 0;
+                        font-size: 11px; 
+                    }
+                }
+
+                .parceiro-image {
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    margin-left: 5px;
+                }
+
+                .parceiro-cupom {
+                    display:flex;
+                    align-items: center;
+                    background-color: #4775d1;
+                    border-bottom-right-radius: 10px;
+                    text-align: center; 
+                    cursor: pointer;
+
+                    .parceiro-cupom-texto {
+                        color:white;
+                    }
+
+                }
+            }
+
+        }
+    }
+}
