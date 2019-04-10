@@ -21,6 +21,7 @@ import { PlacarOnlineComponent } from './placar-online/placar-online';
 	FooterAppVoleiComponent,
 	PlacarOnlineComponent,
   AppHeaderComponent,
+
       ]
 })
 export class ComponentsModule {}
