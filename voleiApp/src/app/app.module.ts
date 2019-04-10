@@ -16,6 +16,7 @@ import { CuponsDescontosComponent } from '../components/cupons-descontos/cupons-
 import { LojaTorcidaComponent } from '../components/loja-torcida/loja-torcida';
 import { AppHeaderComponent } from '../components/app-header/app-header';
 import { PlacarOnlineComponent } from '../components/placar-online/placar-online';
+import { AppHotNewsComponent } from '../components/app-hot-news/app-hot-news';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { PlacarOnlineComponent } from '../components/placar-online/placar-online
     CuponsDescontosComponent,
     LojaTorcidaComponent,
     AppHeaderComponent,
-    PlacarOnlineComponent
+    PlacarOnlineComponent,
+    AppHotNewsComponent
   ],
   imports: [
     BrowserModule,
@@ -46,7 +48,8 @@ import { PlacarOnlineComponent } from '../components/placar-online/placar-online
     CuponsDescontosComponent,
     LojaTorcidaComponent,
     AppHeaderComponent,
-    PlacarOnlineComponent
+    PlacarOnlineComponent,
+    AppHotNewsComponent
   ],
   providers: [
     StatusBar,
