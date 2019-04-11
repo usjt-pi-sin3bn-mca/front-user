@@ -31,5 +31,12 @@ import { EspacoTorcedorComponent } from './espaco-torcedor/espaco-torcedor'
   PlacarSetsComponent,
   EspacoTorcedorComponent
   ]
+import { EspacoTorcedorComponent } from './espaco-torcedor/espaco-torcedor';
+@NgModule({
+	declarations: [FormLoginComponent,
+    EspacoTorcedorComponent],
+	imports: [],
+	exports: [FormLoginComponent,
+    EspacoTorcedorComponent]
 })
 export class ComponentsModule {}

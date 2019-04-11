@@ -20,6 +20,8 @@ import { AppHeaderComponent } from '../components/app-header/app-header';
 import { PlacarOnlineComponent } from '../components/placar-online/placar-online';
 import { AppHotNewsComponent } from '../components/app-hot-news/app-hot-news';
 import { PlacarSetsComponent } from '../components/placar-sets/placar-sets';
+import { TestPage } from '../pages/test/test';
+import { EspacoTorcedorComponent } from '../components/espaco-torcedor/espaco-torcedor';
 
 @NgModule({
   declarations: [
