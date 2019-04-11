@@ -27,7 +27,7 @@ export class MyApp {
       { title: 'Home', component: HomePage },
       { title: 'Lista', component: ListPage },
       { title: 'Cadastro', component: CadastroPage },
-      { title: 'Teste', component: TestPage }
+      { title: 'Test', component: TestPage }
     ];
 
   }

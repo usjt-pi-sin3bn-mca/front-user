@@ -1,0 +1,30 @@
+<div class="content">
+  <div class="intro">
+      <img src="../../assets/imgs/icone-cupons-descontos.png">
+      <h5>CUPONS DE DESCONTO</h5>
+  </div>
+  <div class="intro-texto">
+    <div class="intro-texto-content">
+        <p>
+          Aproveite as promoções! <br>
+          Use os cupons promocionais e economize em compras e em serviços! <br>
+          E se você for torcedor cadastrado, ainda pode ganhar em dobro!
+        </p>
+    </div>
+  </div>
+  <div class="area-descontos">
+    <div class="parceiro-descontos" *ngFor="let parceiro of parceiros">
+      <div class="parceiro-image" [ngStyle]="{'background-image': 'url(' + parceiro.imagem + ')'}"></div>
+      <!-- <img [src]="parceiro.imagem" class="icone-parceiro-desconto"> -->
+      <div class="parceiro-desconto-intro">
+        <h4>{{parceiro.nome}}</h4>
+        <p>
+          {{parceiro.intro}}
+        </p>
+      </div>
+      <div class="parceiro-cupom" (click)="gerarCupom(parceiro.nome)">
+        <p class="parceiro-cupom-texto">GERAR CUPOM</p>
+      </div>
+    </div>
+  </div>
+</div>
