@@ -8,8 +8,12 @@ Repositório destinado ao desenvolvimento front-end do projeto integrado do curs
 * 3 - criar uma branch para desenvolver seu componente (git checkout -b "nome do meu componente")
 * 4 - criar o componente via ionic-cli (ionic generate component "nome do componente"
 * 5 - fazer a chamada do componente na página de teste
-* 6 - ao finalizar todo o componente, realizar o comando git push origin "nome da branch que criei"
-* 7 - aguardar aprovação via pull request
+* 6 - ao finalizar todo o componente, realizar os comandos
+*    git add .
+*    git commit -m"o que eu fiz nessa alteracao"
+*    git push origin "nome da branch que criei"
+* 7 - clicar no link gerado no terminal e abrir o pull request no site do GitHub (uma espécie de chamado)
+* 8 - aguardar aprovação via pull request
 
 ## Material de apoio
 

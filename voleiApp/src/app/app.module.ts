@@ -12,11 +12,14 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HttpClientModule } from '@angular/common/http';
+
 import { CuponsDescontosComponent } from '../components/cupons-descontos/cupons-descontos';
 import { LojaTorcidaComponent } from '../components/loja-torcida/loja-torcida';
 import { AppHeaderComponent } from '../components/app-header/app-header';
 import { PlacarOnlineComponent } from '../components/placar-online/placar-online';
-
+import { AppHotNewsComponent } from '../components/app-hot-news/app-hot-news';
+import { PlacarSetsComponent } from '../components/placar-sets/placar-sets';
+import { LoginPage } from '../pages/login/login';
 
 @NgModule({
   declarations: [
@@ -25,10 +28,13 @@ import { PlacarOnlineComponent } from '../components/placar-online/placar-online
     ListPage,
     CadastroPage,
     TestPage,
+    LoginPage,
+    PlacarSetsComponent,
     CuponsDescontosComponent,
     LojaTorcidaComponent,
     AppHeaderComponent,
-    PlacarOnlineComponent
+    PlacarOnlineComponent,
+    AppHotNewsComponent
   ],
   imports: [
     BrowserModule,
@@ -43,10 +49,12 @@ import { PlacarOnlineComponent } from '../components/placar-online/placar-online
     ListPage,
     CadastroPage,
     TestPage,
+    LoginPage,
     CuponsDescontosComponent,
     LojaTorcidaComponent,
     AppHeaderComponent,
-    PlacarOnlineComponent
+    PlacarOnlineComponent,
+    AppHotNewsComponent
   ],
   providers: [
     StatusBar,
