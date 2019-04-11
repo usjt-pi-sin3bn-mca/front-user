@@ -17,6 +17,7 @@ import { CuponsDescontosComponent } from '../components/cupons-descontos/cupons-
 import { LojaTorcidaComponent } from '../components/loja-torcida/loja-torcida';
 import { AppHeaderComponent } from '../components/app-header/app-header';
 import { PlacarOnlineComponent } from '../components/placar-online/placar-online';
+import { AppHotNewsComponent } from '../components/app-hot-news/app-hot-news';
 import { PlacarSetsComponent } from '../components/placar-sets/placar-sets';
 import { TestPage } from '../pages/test/test';
 
@@ -31,7 +32,8 @@ import { TestPage } from '../pages/test/test';
     CuponsDescontosComponent,
     LojaTorcidaComponent,
     AppHeaderComponent,
-    PlacarOnlineComponent
+    PlacarOnlineComponent,
+    AppHotNewsComponent
   ],
   imports: [
     BrowserModule,
@@ -49,7 +51,8 @@ import { TestPage } from '../pages/test/test';
     CuponsDescontosComponent,
     LojaTorcidaComponent,
     AppHeaderComponent,
-    PlacarOnlineComponent
+    PlacarOnlineComponent,
+    AppHotNewsComponent
   ],
   providers: [
     StatusBar,

@@ -6,6 +6,7 @@ import { LojaTorcidaComponent } from './loja-torcida/loja-torcida';
 import { AppHeaderComponent } from './app-header/app-header';
 import { FooterAppVoleiComponent } from './footer-app-volei/footer-app-volei';
 import { PlacarOnlineComponent } from './placar-online/placar-online';
+import { AppHotNewsComponent } from './app-hot-news/app-hot-news';
 
 @NgModule({
 	declarations: [FormLoginComponent,
@@ -14,6 +15,7 @@ import { PlacarOnlineComponent } from './placar-online/placar-online';
 	FooterAppVoleiComponent,
   AppHeaderComponent,
 	PlacarOnlineComponent,
+  AppHotNewsComponent,
   PlacarSetsComponent],
 	imports: [],
 	exports: [FormLoginComponent,
@@ -22,7 +24,8 @@ import { PlacarOnlineComponent } from './placar-online/placar-online';
 	FooterAppVoleiComponent,
 	PlacarOnlineComponent,
   AppHeaderComponent,
+  AppHotNewsComponent,
   PlacarSetsComponent
-      ]
+  ]
 })
 export class ComponentsModule {}
