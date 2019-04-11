@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { FormLoginComponent } from './form-login/form-login';
-
+import { PlacarSetsComponent } from './placar-sets/placar-sets';
 import { CuponsDescontosComponent } from './cupons-descontos/cupons-descontos';
 import { LojaTorcidaComponent } from './loja-torcida/loja-torcida';
 import { AppHeaderComponent } from './app-header/app-header';
@@ -13,14 +13,16 @@ import { PlacarOnlineComponent } from './placar-online/placar-online';
   CuponsDescontosComponent,
 	FooterAppVoleiComponent,
   AppHeaderComponent,
-	PlacarOnlineComponent],
+	PlacarOnlineComponent,
+  PlacarSetsComponent],
 	imports: [],
 	exports: [FormLoginComponent,
 	CuponsDescontosComponent,	
-    LojaTorcidaComponent,
+  LojaTorcidaComponent,
 	FooterAppVoleiComponent,
 	PlacarOnlineComponent,
   AppHeaderComponent,
+  PlacarSetsComponent
       ]
 })
 export class ComponentsModule {}

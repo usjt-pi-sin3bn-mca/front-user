@@ -28,8 +28,6 @@ export class MyApp {
       { title: 'Lista', component: ListPage },
       { title: 'Cadastro', component: CadastroPage },
       { title: 'Test', component: TestPage }
-
-
     ];
 
   }
