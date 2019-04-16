@@ -1,33 +1,31 @@
-
 // resets
 p,
 h2 {
   margin: 0;
 }
 
-.scroll-content{
+.scroll-content {
   overflow-y:hidden;
+}
+.flex {
+  display: flex;
 }
 
 .flex-direction-column {
   flex-direction: column;
 }
 
-.position-central{
-  width: 92%;
-  border-radius: 25px;
-  background-color: white;
-  margin: 10px auto;    
-  
+ .pai-titulo {
 
   .icone-placar {
-    width: 40px;
-    height: 40px;
-    margin: 9px;
+    width: 45px;
+    height: 45px;
   }
   
   .position-placar-online {
-    align-items: center;    
+    justify-content: center;
+    align-items: center;
+    margin: auto 16px;
   }
   
   .placar-online {
@@ -37,8 +35,10 @@ h2 {
     text-align: center;
     color: #000000;
   }
+}
 
   .pai-subtitulos{
+    justify-content: center;
     align-items:center;
     white-space: nowrap;
     
@@ -87,7 +87,6 @@ h2 {
       font-size: 11px;
       color: #000000;
     }
-    
   }
 
   .pai-times-partida{
@@ -110,10 +109,4 @@ h2 {
       font-size: 30px;
       color: #221f20; 
     }
-
-    .time2-partida{
-      align-items: center;
-      flex-direction: column;
-    }
   }
-}
