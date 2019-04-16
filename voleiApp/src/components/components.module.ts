@@ -7,6 +7,7 @@ import { AppHeaderComponent } from './app-header/app-header';
 import { FooterAppVoleiComponent } from './footer-app-volei/footer-app-volei';
 import { PlacarOnlineComponent } from './placar-online/placar-online';
 import { AppHotNewsComponent } from './app-hot-news/app-hot-news';
+import { JogosInfoComponent } from './jogos-info/jogos-info';
 
 @NgModule({
 	declarations: [FormLoginComponent,
@@ -16,7 +17,8 @@ import { AppHotNewsComponent } from './app-hot-news/app-hot-news';
     AppHeaderComponent,
     PlacarOnlineComponent,
     AppHotNewsComponent,
-    PlacarSetsComponent
+    PlacarSetsComponent,
+    JogosInfoComponent
   ],
 	imports: [],
 	exports: [FormLoginComponent,
@@ -26,7 +28,9 @@ import { AppHotNewsComponent } from './app-hot-news/app-hot-news';
 	PlacarOnlineComponent,
   AppHeaderComponent,
   AppHotNewsComponent,
-  PlacarSetsComponent
+  PlacarSetsComponent,
+    JogosInfoComponent,
+    FooterDivCentralComponent
   ]
 })
 export class ComponentsModule {}

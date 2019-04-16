@@ -19,6 +19,7 @@ import { AppHeaderComponent } from '../components/app-header/app-header';
 import { PlacarOnlineComponent } from '../components/placar-online/placar-online';
 import { AppHotNewsComponent } from '../components/app-hot-news/app-hot-news';
 import { PlacarSetsComponent } from '../components/placar-sets/placar-sets';
+import { JogosInfoComponent } from '../components/jogos-info/jogos-info';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { PlacarSetsComponent } from '../components/placar-sets/placar-sets';
     LojaTorcidaComponent,
     AppHeaderComponent,
     PlacarOnlineComponent,
-    AppHotNewsComponent
+    AppHotNewsComponent,
+    JogosInfoComponent
   ],
   imports: [
     BrowserModule,
@@ -51,7 +53,8 @@ import { PlacarSetsComponent } from '../components/placar-sets/placar-sets';
     LojaTorcidaComponent,
     AppHeaderComponent,
     PlacarOnlineComponent,
-    AppHotNewsComponent
+    AppHotNewsComponent,
+    JogosInfoComponent
   ],
   providers: [
     StatusBar,
