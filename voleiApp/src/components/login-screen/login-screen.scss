@@ -1,0 +1,102 @@
+login-screen {
+    .bg{
+        background-image: linear-gradient(to top,  #2B734D, #48A1A7,  #026F98);
+        height: 100%;
+        width: 100%;
+    }
+}
+
+ion-content {
+    .form-login {
+        width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 100px;
+        position: relative;
+        top: 45px;
+    }
+
+    #inpLogin {
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        float: center;
+        margin: 10px auto;
+        height: 5%;
+        box-sizing: border-box;
+    }
+
+    .campoCadastro {
+        display: inline;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        top: -25px;
+
+        #lblPrimeiroAcesso {
+            position: relative;
+            top: 14px;
+            font-size: 13px;
+            margin: 19px;
+            color: #fff;
+            left: -39px;
+        }
+    
+        #linkCadastro {
+            position: relative;
+            top: -21px;
+            font-size: 13px;
+            color: #fff;
+            left: 190px;
+        }
+    }
+
+    #btnAcessar {
+        width: 80%;
+        margin-top: 20px;
+        top: -5px;
+        letter-spacing: 2px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .labels {
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        position: relative;
+        top: 90px;
+        width: 100%;
+        display: block;
+
+        #lblTime {
+            width: 100%;
+            text-align: center;
+            top: 75px;
+            font-size: 25px;
+            color: #fff;
+        }
+    
+        #lblVolei {
+            width: 100%;
+            text-align: center;
+            font-size: 27px;
+            font-weight: bold;
+            color: #fff;
+            position: relative;
+        }
+    }
+
+    #imgLogo {
+        max-width: 58%;
+        position: relative;
+        margin-left: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: auto;
+        display: block;
+        z-index: 2;
+        top: 55px;
+    }
+}
