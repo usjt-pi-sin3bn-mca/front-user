@@ -9,6 +9,7 @@ import { PlacarOnlineComponent } from './placar-online/placar-online';
 import { AppHotNewsComponent } from './app-hot-news/app-hot-news';
 import { JogosInfoComponent } from './jogos-info/jogos-info';
 import { LoginScreenComponent } from './login-screen/login-screen';
+import { AppCadastroComponent } from './app-cadastro/app-cadastro';
 
 @NgModule({
 	declarations: [FormLoginComponent,
@@ -20,7 +21,8 @@ import { LoginScreenComponent } from './login-screen/login-screen';
     AppHotNewsComponent,
     PlacarSetsComponent,
     JogosInfoComponent,
-    LoginScreenComponent
+    LoginScreenComponent,
+    AppCadastroComponent
   ],
 	imports: [],
 	exports: [FormLoginComponent,
@@ -32,7 +34,8 @@ import { LoginScreenComponent } from './login-screen/login-screen';
   AppHotNewsComponent,
   PlacarSetsComponent,
     JogosInfoComponent,
-    LoginScreenComponent
+    LoginScreenComponent,
+    AppCadastroComponent
   ]
 })
 export class ComponentsModule {}

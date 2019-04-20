@@ -1,0 +1,80 @@
+app-cadastro {
+    .cadastro-content{
+        background-image: linear-gradient(to top,  #2B734D, #48A1A7,  #026F98);
+        height: 100%;
+        width: 100%;
+    }
+    .listCadastro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .cadastroNome{
+        display: flex;
+        justify-content:center;
+        align-self: center;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        min-width: 70%;
+        max-width: 85%;
+        height: 10px;
+    }
+    .cadastroEmail{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        margin-bottom: 10px;
+        min-width: 70%;
+        max-width: 85%;
+        height: 10px;
+    }
+    .cadastroCelular{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        margin-bottom: 10px;
+        min-width: 70%;
+        max-width: 85%;
+        height: 10px;
+    }
+    .cadastroSenha{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        margin-bottom: 10px;
+        min-width: 70%;
+        max-width: 85%;
+        height: 10px;
+    }
+    .cadastroSenhaConfirma{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        margin-bottom: 10px;
+        min-width: 70%;
+        max-width: 85%;
+        margin-bottom: 5px;
+    }
+    .btnCadastro{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        width: 40%;
+    }
+    
+    .labels {
+        display: flex;
+        justify-content: center;
+        margin-right: auto;
+        margin-left: auto;
+
+    }
+    .lblCadastro{
+        font-size: 20px;
+        color: #fff;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+    }
+}
