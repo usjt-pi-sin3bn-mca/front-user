@@ -9,6 +9,8 @@ import { PlacarOnlineComponent } from './placar-online/placar-online';
 import { AppHotNewsComponent } from './app-hot-news/app-hot-news';
 import { JogosInfoComponent } from './jogos-info/jogos-info';
 import { FooterDivCentralComponent } from './footer-div-central/footer-div-central';
+import { LoginScreenComponent } from './login-screen/login-screen';
+import { AppCadastroComponent } from './app-cadastro/app-cadastro';
 
 @NgModule({
 	declarations: [FormLoginComponent,
@@ -20,7 +22,9 @@ import { FooterDivCentralComponent } from './footer-div-central/footer-div-centr
     AppHotNewsComponent,
     PlacarSetsComponent,
     JogosInfoComponent,
-    FooterDivCentralComponent
+    FooterDivCentralComponent,
+    LoginScreenComponent,
+    AppCadastroComponent
   ],
 	imports: [],
 	exports: [FormLoginComponent,
@@ -32,7 +36,10 @@ import { FooterDivCentralComponent } from './footer-div-central/footer-div-centr
   AppHotNewsComponent,
   PlacarSetsComponent,
   JogosInfoComponent,
-    FooterDivCentralComponent
+  FooterDivCentralComponent,
+  JogosInfoComponent,
+  LoginScreenComponent,
+  AppCadastroComponent
   ]
 })
 export class ComponentsModule {}

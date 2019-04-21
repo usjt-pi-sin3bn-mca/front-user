@@ -23,6 +23,7 @@ import { PlacarSetsComponent } from '../components/placar-sets/placar-sets';
 import { JogosInfoComponent } from '../components/jogos-info/jogos-info';
 import { FooterAppVoleiComponent } from '../components/footer-app-volei/footer-app-volei';
 import { FooterDivCentralComponent } from '../components/footer-div-central/footer-div-central';
+import { LoginScreenComponent } from '../components/login-screen/login-screen';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { FooterDivCentralComponent } from '../components/footer-div-central/foot
     AppHotNewsComponent,
     JogosInfoComponent,
     FooterAppVoleiComponent,
-    FooterDivCentralComponent
+    FooterDivCentralComponent,
+    LoginScreenComponent
   ],
   imports: [
     BrowserModule,
@@ -63,7 +65,8 @@ import { FooterDivCentralComponent } from '../components/footer-div-central/foot
     AppHotNewsComponent,
     JogosInfoComponent,
     FooterAppVoleiComponent,
-    FooterDivCentralComponent
+    FooterDivCentralComponent,
+    LoginScreenComponent
   ],
   providers: [
     StatusBar,
