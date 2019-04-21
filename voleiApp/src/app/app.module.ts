@@ -7,6 +7,7 @@ import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { CadastroPage } from '../pages/cadastro/cadastro';
 import { TestPage } from '../pages/test/test';
+import { PlacarPage } from '../pages/placar/placar';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -20,6 +21,8 @@ import { PlacarOnlineComponent } from '../components/placar-online/placar-online
 import { AppHotNewsComponent } from '../components/app-hot-news/app-hot-news';
 import { PlacarSetsComponent } from '../components/placar-sets/placar-sets';
 import { JogosInfoComponent } from '../components/jogos-info/jogos-info';
+import { FooterAppVoleiComponent } from '../components/footer-app-volei/footer-app-volei';
+import { FooterDivCentralComponent } from '../components/footer-div-central/footer-div-central';
 
 @NgModule({
   declarations: [
@@ -28,13 +31,16 @@ import { JogosInfoComponent } from '../components/jogos-info/jogos-info';
     ListPage,
     CadastroPage,
     TestPage,
+    PlacarPage,
     PlacarSetsComponent,
     CuponsDescontosComponent,
     LojaTorcidaComponent,
     AppHeaderComponent,
     PlacarOnlineComponent,
     AppHotNewsComponent,
-    JogosInfoComponent
+    JogosInfoComponent,
+    FooterAppVoleiComponent,
+    FooterDivCentralComponent
   ],
   imports: [
     BrowserModule,
@@ -49,12 +55,15 @@ import { JogosInfoComponent } from '../components/jogos-info/jogos-info';
     ListPage,
     CadastroPage,
     TestPage,
+    PlacarPage,
     CuponsDescontosComponent,
     LojaTorcidaComponent,
     AppHeaderComponent,
     PlacarOnlineComponent,
     AppHotNewsComponent,
-    JogosInfoComponent
+    JogosInfoComponent,
+    FooterAppVoleiComponent,
+    FooterDivCentralComponent
   ],
   providers: [
     StatusBar,

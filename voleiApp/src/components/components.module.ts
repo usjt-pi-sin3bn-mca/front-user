@@ -8,6 +8,7 @@ import { FooterAppVoleiComponent } from './footer-app-volei/footer-app-volei';
 import { PlacarOnlineComponent } from './placar-online/placar-online';
 import { AppHotNewsComponent } from './app-hot-news/app-hot-news';
 import { JogosInfoComponent } from './jogos-info/jogos-info';
+import { FooterDivCentralComponent } from './footer-div-central/footer-div-central';
 
 @NgModule({
 	declarations: [FormLoginComponent,
@@ -18,7 +19,8 @@ import { JogosInfoComponent } from './jogos-info/jogos-info';
     PlacarOnlineComponent,
     AppHotNewsComponent,
     PlacarSetsComponent,
-    JogosInfoComponent
+    JogosInfoComponent,
+    FooterDivCentralComponent
   ],
 	imports: [],
 	exports: [FormLoginComponent,
@@ -29,7 +31,7 @@ import { JogosInfoComponent } from './jogos-info/jogos-info';
   AppHeaderComponent,
   AppHotNewsComponent,
   PlacarSetsComponent,
-    JogosInfoComponent,
+  JogosInfoComponent,
     FooterDivCentralComponent
   ]
 })

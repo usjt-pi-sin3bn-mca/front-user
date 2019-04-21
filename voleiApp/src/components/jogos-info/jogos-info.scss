@@ -1,21 +1,22 @@
-.pai-jogos-info{
-margin: 10px auto;
+.pai-jogos-info {
 
-    .jogos-info1 {
-      justify-content: space-around;
-  
-    }
-    .jogos-info2{
-      justify-content: center;
-    }
-  
-    .link-jogos {
-      font-family: Arial;
-      font-size: 12px;
-      color: #000000;
-  
-    }
-    .link-jogos:active {
-      background-color: grey;
-    }
+  .jogos-info1 {
+    justify-content: space-around;
+
   }
+  .jogos-info2 {
+    margin: 5px;
+    justify-content: center;
+  }
+
+  .link-jogos {
+    font-family: Arial;
+    font-size: 12px;
+    color: #000000;
+    text-decoration: none;
+
+  }
+  .link-jogos:active {
+    background-color: grey;
+  }
+}
