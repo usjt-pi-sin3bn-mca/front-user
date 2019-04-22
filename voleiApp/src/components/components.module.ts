@@ -8,6 +8,7 @@ import { FooterAppVoleiComponent } from './footer-app-volei/footer-app-volei';
 import { PlacarOnlineComponent } from './placar-online/placar-online';
 import { AppHotNewsComponent } from './app-hot-news/app-hot-news';
 import { JogosInfoComponent } from './jogos-info/jogos-info';
+import { FooterDivCentralComponent } from './footer-div-central/footer-div-central';
 import { LoginScreenComponent } from './login-screen/login-screen';
 import { AppCadastroComponent } from './app-cadastro/app-cadastro';
 
@@ -21,6 +22,7 @@ import { AppCadastroComponent } from './app-cadastro/app-cadastro';
     AppHotNewsComponent,
     PlacarSetsComponent,
     JogosInfoComponent,
+    FooterDivCentralComponent,
     LoginScreenComponent,
     AppCadastroComponent
   ],
@@ -33,9 +35,11 @@ import { AppCadastroComponent } from './app-cadastro/app-cadastro';
   AppHeaderComponent,
   AppHotNewsComponent,
   PlacarSetsComponent,
-    JogosInfoComponent,
-    LoginScreenComponent,
-    AppCadastroComponent
+  JogosInfoComponent,
+  FooterDivCentralComponent,
+  JogosInfoComponent,
+  LoginScreenComponent,
+  AppCadastroComponent
   ]
 })
 export class ComponentsModule {}

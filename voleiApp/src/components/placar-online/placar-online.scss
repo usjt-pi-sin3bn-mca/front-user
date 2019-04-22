@@ -4,9 +4,16 @@ h2 {
   margin: 0;
 }
 
-.scroll-content {
-  overflow-y:hidden;
+.flex {
+  display: flex;
 }
+
+//component styles
+.background h3 {
+  color: #fff;
+  width: 100%;
+}
+
 .flex {
   display: flex;
 }
@@ -25,12 +32,12 @@ h2 {
   .position-placar-online {
     justify-content: center;
     align-items: center;
-    margin: auto 16px;
+    margin: auto 5%;
   }
   
   .placar-online {
     font-family: Arial;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: bold;
     text-align: center;
     color: #000000;
@@ -41,7 +48,7 @@ h2 {
     justify-content: center;
     align-items:center;
     white-space: nowrap;
-    
+    margin-left:4%;
     
     .position-filhos{
       align-items:flex-start;
@@ -67,7 +74,7 @@ h2 {
     }
     
     .position-ginasio {
-      margin: 5px 0px 0px 0px;
+      margin-top: 5%;
    }
     
     .ginasio {
