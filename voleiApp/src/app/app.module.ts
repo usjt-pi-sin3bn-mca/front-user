@@ -4,7 +4,6 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
 import { CadastroPage } from '../pages/cadastro/cadastro';
 import { TestPage } from '../pages/test/test';
 import { PlacarPage } from '../pages/placar/placar';
@@ -30,7 +29,6 @@ import { LoginScreenComponent } from '../components/login-screen/login-screen';
   declarations: [
     MyApp,
     HomePage,
-    ListPage,
     CadastroPage,
     LoginPage,
     TestPage,
@@ -56,7 +54,6 @@ import { LoginScreenComponent } from '../components/login-screen/login-screen';
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage,
     CadastroPage,
     LoginPage,
     TestPage,
