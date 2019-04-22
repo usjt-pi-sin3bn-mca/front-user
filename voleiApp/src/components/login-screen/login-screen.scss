@@ -8,7 +8,6 @@ login-screen {
 
 ion-content {
     .form-login {
-        width: 350px;
         margin-left: auto;
         margin-right: auto;
         margin-top: 100px;
@@ -59,6 +58,7 @@ ion-content {
         letter-spacing: 2px;
         margin-right: auto;
         margin-left: auto;
+        border-radius: 30px;
     }
 
     .labels {

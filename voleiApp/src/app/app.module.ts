@@ -8,6 +8,7 @@ import { ListPage } from '../pages/list/list';
 import { CadastroPage } from '../pages/cadastro/cadastro';
 import { TestPage } from '../pages/test/test';
 import { PlacarPage } from '../pages/placar/placar';
+import { LoginPage } from '../pages/login/login';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -31,6 +32,7 @@ import { LoginScreenComponent } from '../components/login-screen/login-screen';
     HomePage,
     ListPage,
     CadastroPage,
+    LoginPage,
     TestPage,
     PlacarPage,
     PlacarSetsComponent,
@@ -56,6 +58,7 @@ import { LoginScreenComponent } from '../components/login-screen/login-screen';
     HomePage,
     ListPage,
     CadastroPage,
+    LoginPage,
     TestPage,
     PlacarPage,
     CuponsDescontosComponent,

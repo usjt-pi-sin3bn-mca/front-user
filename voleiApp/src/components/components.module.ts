@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import { FormLoginComponent } from './form-login/form-login';
 import { PlacarSetsComponent } from './placar-sets/placar-sets';
 import { CuponsDescontosComponent } from './cupons-descontos/cupons-descontos';
 import { LojaTorcidaComponent } from './loja-torcida/loja-torcida';
@@ -13,7 +12,7 @@ import { LoginScreenComponent } from './login-screen/login-screen';
 import { AppCadastroComponent } from './app-cadastro/app-cadastro';
 
 @NgModule({
-	declarations: [FormLoginComponent,
+	declarations: [
     LojaTorcidaComponent,
     CuponsDescontosComponent,
     FooterAppVoleiComponent,
@@ -27,7 +26,7 @@ import { AppCadastroComponent } from './app-cadastro/app-cadastro';
     AppCadastroComponent
   ],
 	imports: [],
-	exports: [FormLoginComponent,
+	exports: [
 	CuponsDescontosComponent,	
   LojaTorcidaComponent,
 	FooterAppVoleiComponent,

@@ -16,7 +16,8 @@
 // automatically applied to the <body> element in the app.
 
 
-body, ion-content {
+body, 
+ion-content {
   margin: 0;
   padding: 0;
   
@@ -32,5 +33,43 @@ body, ion-content {
   
   .scroll-content {
     padding: 0 !important;
+    margin-top: 20px;
+  }
+
+  ion-list,
+  ion-header,
+  .item-ios {
+    background-color: #092336;
+  }
+
+  .toolbar-title,
+  .bar-button-default-md, 
+  .bar-button-clear-md-default, 
+  .bar-button-md-default,
+  .bar-button {
+    color: #fff;
+  }
+
+  ion-header {
+    padding-top: 15px;
+    position: fixed;
+  }
+
+  ion-list {
+    height: 100%;
+  }
+
+  .item-ios {
+    color: #fff;
+  }
+
+  .toolbar-background {
+    background-color: #092336;
+  }
+
+  input {
+    padding: 5px 20px;
+    border: 0;
+    border-radius: 30px;
   }
 }
