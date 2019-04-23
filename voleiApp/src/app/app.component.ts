@@ -6,8 +6,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { HomePage } from '../pages/home/home';
 import { CadastroPage } from '../pages/cadastro/cadastro';
 import { TestPage } from '../pages/test/test';
-import { PlacarPage } from '../pages/placar/placar';
 import { LoginPage } from '../pages/login/login';
+import { PlacarPage } from '../pages/placar/placar';
+import { CuponsDeDescontoPage } from '../pages/cupons-de-desconto/cupons-de-desconto';
 
 
 @Component({
@@ -28,8 +29,9 @@ export class MyApp {
       { title: 'Home', component: LoginPage },
       { title: 'Cadastro', component: CadastroPage },
       { title: 'Test', component: TestPage },
+      { title: 'Login', component: LoginPage },
       { title: 'Placar', component: PlacarPage },
-      { title: 'Login', component: LoginPage }
+      { title: 'Cupons de Desconto', component: CuponsDeDescontoPage }
     ];
 
   }

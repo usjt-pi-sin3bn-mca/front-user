@@ -6,8 +6,9 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { CadastroPage } from '../pages/cadastro/cadastro';
 import { TestPage } from '../pages/test/test';
-import { PlacarPage } from '../pages/placar/placar';
 import { LoginPage } from '../pages/login/login';
+import { PlacarPage } from '../pages/placar/placar';
+import { CuponsDeDescontoPage } from '../pages/cupons-de-desconto/cupons-de-desconto';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -24,6 +25,7 @@ import { JogosInfoComponent } from '../components/jogos-info/jogos-info';
 import { FooterAppVoleiComponent } from '../components/footer-app-volei/footer-app-volei';
 import { FooterDivCentralComponent } from '../components/footer-div-central/footer-div-central';
 import { LoginScreenComponent } from '../components/login-screen/login-screen';
+import { AppCadastroComponent } from '../components/app-cadastro/app-cadastro'
 
 @NgModule({
   declarations: [
@@ -33,6 +35,7 @@ import { LoginScreenComponent } from '../components/login-screen/login-screen';
     LoginPage,
     TestPage,
     PlacarPage,
+    CuponsDeDescontoPage,
     PlacarSetsComponent,
     CuponsDescontosComponent,
     LojaTorcidaComponent,
@@ -42,7 +45,8 @@ import { LoginScreenComponent } from '../components/login-screen/login-screen';
     JogosInfoComponent,
     FooterAppVoleiComponent,
     FooterDivCentralComponent,
-    LoginScreenComponent
+    LoginScreenComponent,
+    AppCadastroComponent
   ],
   imports: [
     BrowserModule,
@@ -58,6 +62,7 @@ import { LoginScreenComponent } from '../components/login-screen/login-screen';
     LoginPage,
     TestPage,
     PlacarPage,
+    CuponsDeDescontoPage,
     CuponsDescontosComponent,
     LojaTorcidaComponent,
     AppHeaderComponent,
@@ -66,7 +71,8 @@ import { LoginScreenComponent } from '../components/login-screen/login-screen';
     JogosInfoComponent,
     FooterAppVoleiComponent,
     FooterDivCentralComponent,
-    LoginScreenComponent
+    LoginScreenComponent,
+    AppCadastroComponent
   ],
   providers: [
     StatusBar,

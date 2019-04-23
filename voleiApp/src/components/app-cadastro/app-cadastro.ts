@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
  * Components.
  */
 @Component({
-  selector: 'app-cadastro',
+  selector: 'cadastro-component',
   templateUrl: 'app-cadastro.html'
 })
 export class AppCadastroComponent {

@@ -2,17 +2,25 @@ footer-div-central {
 
 }
 
+button {
+    padding: 0;
+}
+
 .flex {
     display: flex;
 }
 
-.imagem{
+.imagem {
     margin: 5px;
     width: 30px;
     height: 30px;
 }
 
-.menu-central{
+.menu-central {
     justify-content: center;
     margin-top: 4%;
+}
+
+.botao-menu-central {
+    background-color: transparent;
 }
