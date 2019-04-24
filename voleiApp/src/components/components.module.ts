@@ -10,6 +10,8 @@ import { JogosInfoComponent } from './jogos-info/jogos-info';
 import { FooterDivCentralComponent } from './footer-div-central/footer-div-central';
 import { LoginScreenComponent } from './login-screen/login-screen';
 import { AppCadastroComponent } from './app-cadastro/app-cadastro';
+import { HomeMenuComponent } from './home-menu/home-menu';
+import { AppSeusPontosComponent } from './app-seus-pontos/app-seus-pontos';
 
 @NgModule({
 	declarations: [
@@ -23,7 +25,9 @@ import { AppCadastroComponent } from './app-cadastro/app-cadastro';
     JogosInfoComponent,
     FooterDivCentralComponent,
     LoginScreenComponent,
-    AppCadastroComponent
+    AppCadastroComponent,
+    HomeMenuComponent,
+    AppSeusPontosComponent
   ],
 	imports: [],
 	exports: [
@@ -38,7 +42,9 @@ import { AppCadastroComponent } from './app-cadastro/app-cadastro';
   FooterDivCentralComponent,
   JogosInfoComponent,
   LoginScreenComponent,
-  AppCadastroComponent
+  AppCadastroComponent,
+  HomeMenuComponent,
+  AppSeusPontosComponent
   ]
 })
 export class ComponentsModule {}

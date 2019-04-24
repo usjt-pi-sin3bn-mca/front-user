@@ -1,25 +1,25 @@
 <div class="content">
-  <div class="intro">
+  <div class="flex intro">
       <img src="../../assets/imgs/Icones-telas/icone-cupons-descontos.png">
-      <h2 class="titulo-placar">CUPONS DE DESCONTO</h2>
+      <h2 class="flex titulo-placar">CUPONS DE DESCONTO</h2>
   </div>
 
   <div class="flex pai-intro-texto">
     <div class="filho-intro-texto">
-          <p class="bold intro-texto">
+          <p class="flex bold intro-texto">
             Aproveite as promoções!
           </p>
-          <p class="intro-texto">
+          <p class="flex intro-texto">
           Use os cupons promocionais e economize em compras e em serviços! <br>
           E se você for torcedor cadastrado, ainda pode ganhar em dobro!
-        </p>
+          </p>
     </div>
   </div>
 
   <div class="area-descontos">
-    <div class="parceiro-descontos" *ngFor="let parceiro of parceiros">
-      <div class="parceiro-image" [ngStyle]="{'background-image': 'url(' + parceiro.imagem + ')'}"></div>
-      <!-- <img [src]="parceiro.imagem" class="icone-parceiro-desconto"> -->
+      <div class="parceiro-descontos" *ngFor="let parceiro of parceiros">
+          <div class="parceiro-image" [ngStyle]="{'background-image': 'url(' + parceiro.imagem + ')'}"></div>
+          <!-- <img [src]="parceiro.imagem" class="icone-parceiro-desconto"> -->
       <div class="parceiro-desconto-intro">
         <h4>{{parceiro.nome}}</h4>
         <p>

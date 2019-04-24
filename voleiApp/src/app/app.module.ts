@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { ErrorHandler, NgModule } from '@angular/core';
+import { ErrorHandler } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
+import { CommonModule } from "@angular/common";
+import { NgModule } from '@angular/core';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -9,6 +11,8 @@ import { TestPage } from '../pages/test/test';
 import { LoginPage } from '../pages/login/login';
 import { PlacarPage } from '../pages/placar/placar';
 import { CuponsDeDescontoPage } from '../pages/cupons-de-desconto/cupons-de-desconto';
+import { LojaPage } from '../pages/loja/loja';
+import { SeusPontosPage } from '../pages/seus-pontos/seus-pontos';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -26,6 +30,8 @@ import { FooterAppVoleiComponent } from '../components/footer-app-volei/footer-a
 import { FooterDivCentralComponent } from '../components/footer-div-central/footer-div-central';
 import { LoginScreenComponent } from '../components/login-screen/login-screen';
 import { AppCadastroComponent } from '../components/app-cadastro/app-cadastro'
+import { HomeMenuComponent } from '../components/home-menu/home-menu';
+import { AppSeusPontosComponent } from '../components/app-seus-pontos/app-seus-pontos';
 
 @NgModule({
   declarations: [
@@ -36,6 +42,8 @@ import { AppCadastroComponent } from '../components/app-cadastro/app-cadastro'
     TestPage,
     PlacarPage,
     CuponsDeDescontoPage,
+    LojaPage,
+    SeusPontosPage,
     PlacarSetsComponent,
     CuponsDescontosComponent,
     LojaTorcidaComponent,
@@ -46,13 +54,15 @@ import { AppCadastroComponent } from '../components/app-cadastro/app-cadastro'
     FooterAppVoleiComponent,
     FooterDivCentralComponent,
     LoginScreenComponent,
-    AppCadastroComponent
+    AppCadastroComponent,
+    HomeMenuComponent,
+    AppSeusPontosComponent
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    HttpClientModule
-    
+    HttpClientModule,
+    CommonModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -63,6 +73,8 @@ import { AppCadastroComponent } from '../components/app-cadastro/app-cadastro'
     TestPage,
     PlacarPage,
     CuponsDeDescontoPage,
+    LojaPage,
+    SeusPontosPage,
     CuponsDescontosComponent,
     LojaTorcidaComponent,
     AppHeaderComponent,
@@ -72,7 +84,9 @@ import { AppCadastroComponent } from '../components/app-cadastro/app-cadastro'
     FooterAppVoleiComponent,
     FooterDivCentralComponent,
     LoginScreenComponent,
-    AppCadastroComponent
+    AppCadastroComponent,
+    HomeMenuComponent,
+    AppSeusPontosComponent
   ],
   providers: [
     StatusBar,

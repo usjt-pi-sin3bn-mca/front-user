@@ -1,0 +1,38 @@
+home-menu {
+    
+}
+    
+
+.flex {
+    display: flex;
+}
+
+.item-menu {
+    margin: 2%;
+    padding: 8px;
+    border-radius: 200px;
+    background-color: white;
+    justify-content: center;
+    align-items:center;
+    align-content: center;
+}
+
+.icone-menu {
+    width: 50px;
+    height: 50px;
+}
+
+.pai-texto-menu {
+    flex-direction: column;
+    margin: 0 3% 0 3%;
+
+    .titulo-texto-menu {
+        font-weight: bold;
+    }
+
+    .subtitulo-texto-menu {
+        font-size:11px;
+        text-align: justify;
+    }
+
+}

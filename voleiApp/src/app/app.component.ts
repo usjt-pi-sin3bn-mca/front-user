@@ -9,6 +9,8 @@ import { TestPage } from '../pages/test/test';
 import { LoginPage } from '../pages/login/login';
 import { PlacarPage } from '../pages/placar/placar';
 import { CuponsDeDescontoPage } from '../pages/cupons-de-desconto/cupons-de-desconto';
+import { LojaPage } from '../pages/loja/loja';
+import { SeusPontosPage } from '../pages/seus-pontos/seus-pontos';
 
 
 @Component({
@@ -26,12 +28,14 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Home', component: LoginPage },
+      { title: 'Login', component: LoginPage },
+      { title: 'Home', component: HomePage },
       { title: 'Cadastro', component: CadastroPage },
       { title: 'Test', component: TestPage },
-      { title: 'Login', component: LoginPage },
-      { title: 'Placar', component: PlacarPage },
-      { title: 'Cupons de Desconto', component: CuponsDeDescontoPage }
+      { title: 'Placar Online', component: PlacarPage },
+      { title: 'Cupons de Desconto', component: CuponsDeDescontoPage },
+      { title: 'Loja da Torcida', component: LojaPage },
+      { title: 'Seus Pontos', component: SeusPontosPage }
     ];
 
   }

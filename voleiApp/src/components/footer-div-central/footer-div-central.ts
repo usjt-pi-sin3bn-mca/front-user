@@ -2,6 +2,9 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { PlacarPage } from '../../pages/placar/placar';
 import { CuponsDeDescontoPage } from '../../pages/cupons-de-desconto/cupons-de-desconto';
+import { LojaPage } from '../../pages/loja/loja';
+import { SeusPontosPage } from '../../pages/seus-pontos/seus-pontos';
+
 /**
  * Generated class for the FooterDivCentralComponent component.
  *
@@ -14,8 +17,6 @@ import { CuponsDeDescontoPage } from '../../pages/cupons-de-desconto/cupons-de-d
 })
 export class FooterDivCentralComponent {
 
-  PlacarPage: PlacarPage
-
   constructor(public navCtrl: NavController) {}
 
     irPlacar() {
@@ -24,6 +25,14 @@ export class FooterDivCentralComponent {
 
     irCupom() {
       this.navCtrl.setRoot(CuponsDeDescontoPage);
+    }
+
+    irLoja() {
+      this.navCtrl.setRoot(LojaPage);
+    }
+
+    irPontos() {
+      this.navCtrl.setRoot(SeusPontosPage);
     }
 
   }
