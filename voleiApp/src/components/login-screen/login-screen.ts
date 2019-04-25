@@ -18,5 +18,4 @@ export class LoginScreenComponent {
     console.log('Hello LoginScreenComponent Component');
     this.text = 'Hello World';
   }
-
 }

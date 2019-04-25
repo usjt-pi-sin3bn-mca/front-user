@@ -1,21 +1,21 @@
 import { Component } from '@angular/core';
 
 /**
- * Generated class for the AppCadastroComponent component.
+ * Generated class for the AppSeusPontosComponent component.
  *
  * See https://angular.io/api/core/Component for more info on Angular
  * Components.
  */
 @Component({
-  selector: 'cadastro-component',
-  templateUrl: 'app-cadastro.html'
+  selector: 'app-seus-pontos',
+  templateUrl: 'app-seus-pontos.html'
 })
-export class AppCadastroComponent {
+export class AppSeusPontosComponent {
 
   text: string;
 
   constructor() {
-    console.log('Hello AppCadastroComponent Component');
+    console.log('Hello AppSeusPontosComponent Component');
     this.text = 'Hello World';
   }
 

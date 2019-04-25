@@ -1,4 +1,9 @@
 import { Component } from '@angular/core';
+import { NavController } from 'ionic-angular';
+import { PlacarPage } from '../../pages/placar/placar';
+import { CuponsDeDescontoPage } from '../../pages/cupons-de-desconto/cupons-de-desconto';
+import { LojaPage } from '../../pages/loja/loja';
+import { SeusPontosPage } from '../../pages/seus-pontos/seus-pontos';
 
 /**
  * Generated class for the FooterDivCentralComponent component.
@@ -12,11 +17,22 @@ import { Component } from '@angular/core';
 })
 export class FooterDivCentralComponent {
 
-  text: string;
+  constructor(public navCtrl: NavController) {}
 
-  constructor() {
-    console.log('Hello FooterDivCentralComponent Component');
-    this.text = 'Hello World';
+    irPlacar() {
+      this.navCtrl.setRoot(PlacarPage);
+    }
+
+    irCupom() {
+      this.navCtrl.setRoot(CuponsDeDescontoPage);
+    }
+
+    irLoja() {
+      this.navCtrl.setRoot(LojaPage);
+    }
+
+    irPontos() {
+      this.navCtrl.setRoot(SeusPontosPage);
+    }
+
   }
-
-}

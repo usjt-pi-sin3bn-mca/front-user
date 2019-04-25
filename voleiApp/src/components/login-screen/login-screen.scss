@@ -6,7 +6,7 @@ login-screen {
     }
 }
 
-ion-content {
+div {
     .form-login {
         margin-left: auto;
         margin-right: auto;
@@ -26,28 +26,22 @@ ion-content {
     }
 
     .campoCadastro {
-        display: inline;
-        position: relative;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        top: -25px;
-
+        display: flex;
+        justify-content: center;  
+        margin-top: 25px;      
+        label {
+            margin-right: 5px;
+        }
         #lblPrimeiroAcesso {
             position: relative;
-            top: 14px;
             font-size: 13px;
-            margin: 19px;
             color: #fff;
-            left: -39px;
         }
     
         #linkCadastro {
             position: relative;
-            top: -21px;
             font-size: 13px;
             color: #fff;
-            left: 190px;
         }
     }
 
@@ -55,7 +49,7 @@ ion-content {
         width: 80%;
         margin-top: 20px;
         top: -5px;
-        letter-spacing: 2px;
+        letter-spacing: 3spx;
         margin-right: auto;
         margin-left: auto;
         border-radius: 30px;
@@ -76,6 +70,7 @@ ion-content {
             top: 75px;
             font-size: 25px;
             color: #fff;
+            text-shadow: 5px 5px 10px #34495e;
         }
     
         #lblVolei {
@@ -85,6 +80,7 @@ ion-content {
             font-weight: bold;
             color: #fff;
             position: relative;
+            text-shadow: 5px 5px 10px #34495e;
         }
     }
 
