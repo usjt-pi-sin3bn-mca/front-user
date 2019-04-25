@@ -12,7 +12,12 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HttpClientModule } from '@angular/common/http';
+<<<<<<< HEAD
 import { InicioComponent } from '../components/inicio/inicio';
+=======
+import { TestPage } from '../pages/test/test';
+import { CuponsDescontosComponent } from '../components/cupons-descontos/cupons-descontos';
+>>>>>>> 38e28eb4bbbbd03bda0b0229c61d343e9cd8d821
 
 @NgModule({
   declarations: [
@@ -21,7 +26,11 @@ import { InicioComponent } from '../components/inicio/inicio';
     ListPage,
     CadastroPage,
     TestPage,
+<<<<<<< HEAD
     InicioComponent
+=======
+    CuponsDescontosComponent
+>>>>>>> 38e28eb4bbbbd03bda0b0229c61d343e9cd8d821
   ],
   imports: [
     BrowserModule,
@@ -35,8 +44,12 @@ import { InicioComponent } from '../components/inicio/inicio';
     ListPage,
     CadastroPage,
     TestPage,
+<<<<<<< HEAD
     InicioComponent
 
+=======
+    CuponsDescontosComponent
+>>>>>>> 38e28eb4bbbbd03bda0b0229c61d343e9cd8d821
   ],
   providers: [
     StatusBar,

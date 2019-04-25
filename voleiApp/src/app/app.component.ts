@@ -7,7 +7,10 @@ import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { CadastroPage } from '../pages/cadastro/cadastro';
 import { TestPage } from '../pages/test/test';
+<<<<<<< HEAD
 
+=======
+>>>>>>> 38e28eb4bbbbd03bda0b0229c61d343e9cd8d821
 
 @Component({
   templateUrl: 'app.html'
@@ -27,7 +30,11 @@ export class MyApp {
       { title: 'Home', component: HomePage },
       { title: 'Lista', component: ListPage },
       { title: 'Cadastro', component: CadastroPage },
+<<<<<<< HEAD
       { title: 'Teste', component: TestPage },
+=======
+      { title: 'Test', component: TestPage }
+>>>>>>> 38e28eb4bbbbd03bda0b0229c61d343e9cd8d821
     ];
 
   }
