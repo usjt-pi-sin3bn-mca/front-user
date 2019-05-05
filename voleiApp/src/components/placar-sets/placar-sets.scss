@@ -1,11 +1,33 @@
 placar-sets {
   // general syles
+  
+  .pai-bolinhas{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .filho-bolinhas{
+    padding: 5px;
+    justify-content: center;
+  }
+
+  .placar-sets-pai{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+
   .content {
    border-radius: 30px;
-   width: 93%;
-   height: 90%;
    margin :10px;
    background-color: white;
+   justify-content: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   align-content: center;
   }
 
  .pontos-set {
@@ -82,6 +104,8 @@ placar-sets {
    font-style: italic;
    text-align: left;
    color: #fdb908;
+   justify-content: center;
+   display: flex;
   }
 
   .titulo-tempo-tecnico {

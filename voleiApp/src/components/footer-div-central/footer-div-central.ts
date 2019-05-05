@@ -4,6 +4,8 @@ import { PlacarPage } from '../../pages/placar/placar';
 import { CuponsDeDescontoPage } from '../../pages/cupons-de-desconto/cupons-de-desconto';
 import { LojaPage } from '../../pages/loja/loja';
 import { SeusPontosPage } from '../../pages/seus-pontos/seus-pontos';
+import { EspacoTorcedorPage } from '../../pages/espaco-torcedor/espaco-torcedor';
+import { MarketPage } from '../../pages/market/market';
 
 /**
  * Generated class for the FooterDivCentralComponent component.
@@ -23,6 +25,10 @@ export class FooterDivCentralComponent {
       this.navCtrl.setRoot(PlacarPage);
     }
 
+    irEspaco() {
+      this.navCtrl.setRoot(EspacoTorcedorPage);
+    }
+
     irCupom() {
       this.navCtrl.setRoot(CuponsDeDescontoPage);
     }
@@ -35,4 +41,7 @@ export class FooterDivCentralComponent {
       this.navCtrl.setRoot(SeusPontosPage);
     }
 
+    irMarket() {
+      this.navCtrl.setRoot(MarketPage);
+    }
   }

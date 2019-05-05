@@ -11,6 +11,8 @@ import { PlacarPage } from '../pages/placar/placar';
 import { CuponsDeDescontoPage } from '../pages/cupons-de-desconto/cupons-de-desconto';
 import { LojaPage } from '../pages/loja/loja';
 import { SeusPontosPage } from '../pages/seus-pontos/seus-pontos';
+import { EspacoTorcedorPage } from '../pages/espaco-torcedor/espaco-torcedor';
+import { MarketPage } from '../pages/market/market'
 
 
 @Component({
@@ -33,9 +35,11 @@ export class MyApp {
       { title: 'Cadastro', component: CadastroPage },
       { title: 'Test', component: TestPage },
       { title: 'Placar Online', component: PlacarPage },
+      { title: 'Espaço do Torcedor', component: EspacoTorcedorPage },
+      { title: "Marketplace", component: MarketPage},
       { title: 'Cupons de Desconto', component: CuponsDeDescontoPage },
       { title: 'Loja da Torcida', component: LojaPage },
-      { title: 'Seus Pontos', component: SeusPontosPage }
+      { title: 'Seus Pontos', component: SeusPontosPage }      
     ];
 
   }

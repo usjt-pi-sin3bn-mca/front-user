@@ -12,6 +12,8 @@ import { LoginScreenComponent } from './login-screen/login-screen';
 import { AppCadastroComponent } from './app-cadastro/app-cadastro';
 import { HomeMenuComponent } from './home-menu/home-menu';
 import { AppSeusPontosComponent } from './app-seus-pontos/app-seus-pontos';
+import { EspacoDoTorcedorComponent } from './espaco-do-torcedor/espaco-do-torcedor';
+import { MarketplaceComponent } from './marketplace/marketplace';
 
 @NgModule({
 	declarations: [
@@ -27,7 +29,9 @@ import { AppSeusPontosComponent } from './app-seus-pontos/app-seus-pontos';
     LoginScreenComponent,
     AppCadastroComponent,
     HomeMenuComponent,
-    AppSeusPontosComponent
+    AppSeusPontosComponent,
+    EspacoDoTorcedorComponent,
+    MarketplaceComponent
   ],
 	imports: [],
 	exports: [
@@ -44,7 +48,9 @@ import { AppSeusPontosComponent } from './app-seus-pontos/app-seus-pontos';
   LoginScreenComponent,
   AppCadastroComponent,
   HomeMenuComponent,
-  AppSeusPontosComponent
+  AppSeusPontosComponent,
+  EspacoDoTorcedorComponent,
+  MarketplaceComponent
   ]
 })
 export class ComponentsModule {}

@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { NavController } from 'ionic-angular';
+import { LojaPage } from '../../pages/loja/loja';
 
 /**
  * Generated class for the AppSeusPontosComponent component.
@@ -12,11 +14,10 @@ import { Component } from '@angular/core';
 })
 export class AppSeusPontosComponent {
 
-  text: string;
-
-  constructor() {
-    console.log('Hello AppSeusPontosComponent Component');
-    this.text = 'Hello World';
+  constructor(public navCtrl: NavController) {}
+  
+  irLoja() {
+    this.navCtrl.setRoot(LojaPage);
   }
 
 }
