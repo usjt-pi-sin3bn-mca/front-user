@@ -13,6 +13,8 @@ import { PlacarPage } from '../pages/placar/placar';
 import { CuponsDeDescontoPage } from '../pages/cupons-de-desconto/cupons-de-desconto';
 import { LojaPage } from '../pages/loja/loja';
 import { SeusPontosPage } from '../pages/seus-pontos/seus-pontos';
+import { EspacoTorcedorPage } from '../pages/espaco-torcedor/espaco-torcedor';
+import { MarketPage } from '../pages/market/market';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -32,6 +34,8 @@ import { LoginScreenComponent } from '../components/login-screen/login-screen';
 import { AppCadastroComponent } from '../components/app-cadastro/app-cadastro'
 import { HomeMenuComponent } from '../components/home-menu/home-menu';
 import { AppSeusPontosComponent } from '../components/app-seus-pontos/app-seus-pontos';
+import { EspacoDoTorcedorComponent } from '../components/espaco-do-torcedor/espaco-do-torcedor';
+import { MarketplaceComponent } from '../components/marketplace/marketplace';
 
 @NgModule({
   declarations: [
@@ -44,6 +48,8 @@ import { AppSeusPontosComponent } from '../components/app-seus-pontos/app-seus-p
     CuponsDeDescontoPage,
     LojaPage,
     SeusPontosPage,
+    EspacoTorcedorPage,
+    MarketPage,
     PlacarSetsComponent,
     CuponsDescontosComponent,
     LojaTorcidaComponent,
@@ -56,7 +62,9 @@ import { AppSeusPontosComponent } from '../components/app-seus-pontos/app-seus-p
     LoginScreenComponent,
     AppCadastroComponent,
     HomeMenuComponent,
-    AppSeusPontosComponent
+    AppSeusPontosComponent,
+    EspacoDoTorcedorComponent,
+    MarketplaceComponent
   ],
   imports: [
     BrowserModule,
@@ -75,6 +83,8 @@ import { AppSeusPontosComponent } from '../components/app-seus-pontos/app-seus-p
     CuponsDeDescontoPage,
     LojaPage,
     SeusPontosPage,
+    EspacoTorcedorPage,
+    MarketPage,
     CuponsDescontosComponent,
     LojaTorcidaComponent,
     AppHeaderComponent,
@@ -86,7 +96,9 @@ import { AppSeusPontosComponent } from '../components/app-seus-pontos/app-seus-p
     LoginScreenComponent,
     AppCadastroComponent,
     HomeMenuComponent,
-    AppSeusPontosComponent
+    AppSeusPontosComponent,
+    EspacoDoTorcedorComponent,
+    MarketplaceComponent
   ],
   providers: [
     StatusBar,

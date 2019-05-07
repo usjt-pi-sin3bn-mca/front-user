@@ -1,0 +1,140 @@
+espaco-do-torcedor {
+
+    //resets
+    h1, 
+    h2, 
+    h3 {
+        margin-block-start: 0;
+        margin-block-end: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+
+    .cabecalho {
+        display: flex;
+        .posicao-titulo-espaco {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-grow: 2;
+            height: 45px;
+        }
+        .titulo-espaco{
+            font-weight: bold;
+            font-size: 130%;
+        }
+    }
+
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #06548c;
+        box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    }
+    ::-webkit-scrollbar-thumb:window-inactive {
+        background: #06548c;
+    }
+
+    .setores {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        flex-direction: column;
+        max-height: 250px;
+        overflow: auto;
+        overflow-x: hidden;
+
+        .setor1 {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 80px;
+            .setor-seja-socio, .setor-ingressos {
+                display:flex;
+                flex-direction: column;
+                margin: 3%;
+                align-items: center;
+                
+            }
+        }
+
+        .setor2 {
+            display:flex;
+            justify-content: space-around;
+            .setor-convenios, .setor-experiencias {
+                display:flex;
+                flex-direction: column;
+                margin: 2% 5% 2% 2%;
+                align-items: center;
+            }
+        }
+        .titulo-do-setor{
+            display: flex;
+            font-size: 15px;
+            font-weight: bold;
+            justify-content: center;
+            
+        }
+
+        .descricao-setor{
+            font-size: 10px;
+            text-align: justify;
+        }
+
+        .saiba-mais{
+            color: #000000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .saiba-mais:active {
+            background-color: grey;
+          }
+    } 
+
+    .informacoes {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: justify;
+        margin: 5% 8%;
+
+        .titulo-informacoes-bold{
+            font-size: 15px;
+            display:flex;
+            font-weight: bold;
+        }
+        .titulo-informacoes{
+            font-size: 11px;
+            display:flex;
+        }
+    }
+        
+    #imgBandeira {
+        width: 45px;
+        height: 45px;
+        position: absolute;
+     }
+
+    #imgSejaSocio, #imgIngressos, #imgConvenios, #imgExperiencias {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        margin-bottom: 3%;
+    }
+
+
+}

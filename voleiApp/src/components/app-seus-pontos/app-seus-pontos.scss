@@ -10,33 +10,33 @@ app-seus-pontos {
       display: flex;
     }
 
+    .icone-pontos {
+      display: flex;
+      justify-content: flex-start;
+      position: absolute;
+      width: 45px;
+      height: 45px;
+    }
     .titulo-pontos {
       display: flex;
-      img {
-        width: 45px;
-        height: 45px;
-      }
+      justify-content: center;
+      align-items: center;
+      height: 45px;
+
       h1 {
-        align-self: center;
-        text-transform: uppercase;
-        margin-left: 2%;
         font-weight: bolder;
-        font-size: 17px;
+        font-size: 23px;
       }
     }
   
     .texto {
-      margin: 0 20% 5% 10%;
-      margin-left: 20%;
-      margin-right: 10%;
       flex-direction: column;
       text-align: justify;
-      h3 {
-        font-size: 12px;
-      }
-      p {
-        margin-top: 0;
-        font-size: 12px;
+      font-size: 12px;
+      margin: 5% 8%;
+      .subtitulo-pontos {
+        font-weight: bold;
+        font-size: 15px;
       }
     }
   

@@ -25,19 +25,22 @@ h2 {
  .pai-titulo {
 
   .icone-placar {
+    position: absolute;
     width: 45px;
     height: 45px;
+    
   }
   
   .position-placar-online {
     justify-content: center;
     align-items: center;
-    margin: auto 5%;
+    height: 45px;
+    flex-grow: 2;
   }
   
   .placar-online {
     font-family: Arial;
-    font-size: 17px;
+    font-size: 20px;
     font-weight: bold;
     text-align: center;
     color: #000000;
@@ -47,9 +50,7 @@ h2 {
   .pai-subtitulos{
     justify-content: center;
     align-items:center;
-    white-space: nowrap;
-    margin-left:4%;
-    
+    white-space: nowrap;  
     .position-filhos{
       align-items:flex-start;
     }

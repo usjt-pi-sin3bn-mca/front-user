@@ -18,47 +18,41 @@ cupons-descontos {
         display:flex;
     }
 
-    .bold {
-        font-weight: bold;
-    }
-
-    .content {
-        border-radius: 60px;
-        width: 100%;
-        height: 100%;
-        background-color: white;
-
         .intro { 
-            align-items: center;
+            justify-content: center;
 
             .titulo-placar{
+                display: flex;
+                align-items: center;
                 font-family: Arial;
-                font-size: 15px;
+                font-size: 20px;
                 font-weight: bold;
-                text-align: center;
                 color: #000000;
-                margin: 2%;
+                height: 45px;  
             }
-
-            img {
-                margin: 1%;
-                width: 45px;
-                height: 45px;
-            }
+        }
+        img {
+            width: 45px;
+            height: 45px;
+            position: absolute;
         }
 
         .pai-intro-texto {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            margin: 0% 8% 0% 22%;
+            margin: 5% 8%;
         
         .intro-texto {
             text-align: left;
             font-family: Arial;
-            font-size: 10px;
+            font-size: 11px;
             color: #000000;
             text-align: justify;
+        }
+        .intro-texto-bold {
+            font-size: 15px;
+            font-weight: bold;
         }
         }
 
@@ -130,4 +124,4 @@ cupons-descontos {
 
         }
     }
-}
+

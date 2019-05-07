@@ -4,6 +4,8 @@ import { PlacarPage } from '../../pages/placar/placar';
 import { CuponsDeDescontoPage } from '../../pages/cupons-de-desconto/cupons-de-desconto';
 import { LojaPage } from '../../pages/loja/loja';
 import { SeusPontosPage } from '../../pages/seus-pontos/seus-pontos';
+import { EspacoTorcedorPage } from '../../pages/espaco-torcedor/espaco-torcedor';
+import { MarketPage } from '../../pages/market/market';
 
 /**
  * Generated class for the HomeMenuComponent component.
@@ -25,6 +27,10 @@ export class HomeMenuComponent {
     this.navCtrl.setRoot(PlacarPage);
   }
 
+  irEspaco() {
+    this.navCtrl.setRoot(EspacoTorcedorPage);
+  }
+
   irCupom() {
     this.navCtrl.setRoot(CuponsDeDescontoPage);
   }
@@ -35,5 +41,9 @@ export class HomeMenuComponent {
 
   irPontos() {
     this.navCtrl.setRoot(SeusPontosPage);
+  }
+  
+  irMarket() {
+    this.navCtrl.setRoot(MarketPage);
   }
 }
