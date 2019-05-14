@@ -7,12 +7,26 @@ cadastro-screen {
         align-items: center;
         margin-left: auto;
         margin-right: auto;
+        position: relative;
+        top: 100px;
         
+        .lblCadastroDeUsuario {
+            font-weight: bold;
+            color: #fff;
+            margin-right: auto;
+            margin-left: auto;
+            position: relative;
+            position: relative;
+            top: -50px;
+            font-size: 25px;
+            text-shadow: 5px 5px 10px #34495e;
+            letter-spacing: 1px;
+        }
+
         .imgUser {
             margin-left: auto;
             margin-right: auto;
-            margin-bottom: 10px;
-            margin-top: 10px;
+            margin-bottom: 20px;
             width: 55%;
         }
 
@@ -26,7 +40,6 @@ cadastro-screen {
                 border: 0;
                 padding-left: 10px;
                 font-weight: bold;
-                box-shadow: 3px 3px 10px 1px #333;
             }
 
             #checkSocio {
