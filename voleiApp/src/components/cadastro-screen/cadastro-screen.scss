@@ -3,12 +3,12 @@ cadastro-screen {
     .formulario {
         display: flex;
         flex-direction: column;
-        width: 75%;
         align-items: center;
+        width: 75%;
         margin-left: auto;
         margin-right: auto;
         position: relative;
-        top: 100px;
+        top: 30px;
         
         .lblCadastroDeUsuario {
             font-weight: bold;
@@ -31,29 +31,46 @@ cadastro-screen {
         }
 
         .preencher {
-            #inpNome, #inpEmail, #inpSenha {
+
+            #inpNome, #inpEmail, #inpSenha, #inpConfirmaSenha {
                 width: 100%;
-                margin-top: 20px;
+                margin-top: 10px;
                 border-radius: 20px;
-                padding: 10px;
+                padding: 8px;
                 box-shadow: none;
                 border: 0;
                 padding-left: 10px;
                 font-weight: bold;
             }
 
-            #checkSocio {
-                margin-top: 10px;
-                margin-left: 110px;
-                min-width: 16px;
-                min-height: 16px;
-                margin-right: 2px;
-                color: #fff;
+            // #checkSocio {
+            //     margin-top: 10px;
+            //     min-width: 16px;
+            //     min-height: 16px;
+            // }
+
+            .selectSocioUsuario {
+                margin-top: 20px;
+                font-weight: bold;
+                border-radius: 20px;
+                width: 100%;
+                padding: 8px;
+                padding-left: 30px;
+                color: #636e72;
+                font-weight: bold;
+
+                #selectUsuario, #selectSocio {
+                    color: #636e72;
+                    font-size: 13px;
+                    padding-left: 3px;
+                }
             }
 
             #btnCadastrar {
                 margin-top: 20px;
                 border-radius: 20px;
+                font-weight: bold;
+                letter-spacing: 1px;
             }
         }
     }
