@@ -36,6 +36,7 @@ import { HomeMenuComponent } from '../components/home-menu/home-menu';
 import { AppSeusPontosComponent } from '../components/app-seus-pontos/app-seus-pontos';
 import { EspacoDoTorcedorComponent } from '../components/espaco-do-torcedor/espaco-do-torcedor';
 import { MarketplaceComponent } from '../components/marketplace/marketplace';
+import { DadosPlacarProvider } from '../providers/dados-placar/dados-placar';
 
 @NgModule({
   declarations: [
@@ -103,7 +104,8 @@ import { MarketplaceComponent } from '../components/marketplace/marketplace';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    DadosPlacarProvider
   ]
 })
 export class AppModule {}

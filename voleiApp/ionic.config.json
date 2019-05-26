@@ -1,5 +1,11 @@
 {
   "name": "voleiApp",
   "integrations": {},
-  "type": "ionic-angular"
+  "type": "ionic-angular",
+  "proxies": [
+    {
+      "path": "/partidas/",
+      "proxyUrl": "http://jazz.lucasduarte.club/api/partidas/"
+    }
+  ]
 }
