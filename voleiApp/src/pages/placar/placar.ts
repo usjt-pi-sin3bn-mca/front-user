@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { DadosPlacarProvider } from '../../providers/dados-placar/dados-placar';
 
 /**
  * Generated class for the PlacarPage page.
@@ -14,12 +15,45 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'placar.html',
 })
 export class PlacarPage {
+  obj: any;
+  result: any;
+  partidaAtual: any;
+  emAndamento: boolean = true;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public _dadosPlacar: DadosPlacarProvider) {
+    
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad PlacarPage');
+    //console.log("eae", this._dadosPlacar.getAllPartidas());
+    this.getAtual();
   }
+
+  //Pegando todas as partidas
+  getAll() {
+    this._dadosPlacar.getAllPartidas()
+      .then(data => {
+        this.obj = data;
+        this.result = this.obj;
+        console.log("kk", this.result);
+
+      });
+  }
+
+  //Pegando a partida atual
+  getAtual() {
+    this._dadosPlacar.getAllPartidas()
+      .then(data => {
+        this.obj = data;
+        this.partidaAtual = this.obj[0];
+        if (this.partidaAtual.partidaFinalizada == false && this.partidaAtual.partidaIniciada == true) {
+          this.emAndamento = true;
+        } else {
+          this.emAndamento = false;
+        }
+
+      });
+  }
+
 
 }
