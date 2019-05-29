@@ -37,6 +37,7 @@ import { AppSeusPontosComponent } from '../components/app-seus-pontos/app-seus-p
 import { EspacoDoTorcedorComponent } from '../components/espaco-do-torcedor/espaco-do-torcedor';
 import { MarketplaceComponent } from '../components/marketplace/marketplace';
 import { DadosPlacarProvider } from '../providers/dados-placar/dados-placar';
+import { CadastroScreenComponent } from '../components/cadastro-screen/cadastro-screen';
 
 @NgModule({
   declarations: [
@@ -65,7 +66,8 @@ import { DadosPlacarProvider } from '../providers/dados-placar/dados-placar';
     HomeMenuComponent,
     AppSeusPontosComponent,
     EspacoDoTorcedorComponent,
-    MarketplaceComponent
+    MarketplaceComponent,
+    CadastroScreenComponent
   ],
   imports: [
     BrowserModule,
@@ -99,7 +101,8 @@ import { DadosPlacarProvider } from '../providers/dados-placar/dados-placar';
     HomeMenuComponent,
     AppSeusPontosComponent,
     EspacoDoTorcedorComponent,
-    MarketplaceComponent
+    MarketplaceComponent,
+    CadastroScreenComponent
   ],
   providers: [
     StatusBar,
