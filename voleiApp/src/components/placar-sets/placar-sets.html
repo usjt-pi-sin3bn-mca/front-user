@@ -1,36 +1,39 @@
 <!-- Generated template for the PlacarSetsComponent component -->
 <div class="content">
-    
+
     <div class="placar-sets-pai">
 
-        <a class= "pontos-set">1</a>
+        <a class="pontos-set" *ngIf="!visitante">{{totalSetsSJ}}</a>
+        <a class="pontos-set" *ngIf="visitante">{{totalSetsAdversario}}</a>
         <div class="pai-placar">
             <div class="filho-placar">
                 <div class="potuacao-partida">
-                    <a class="pontos-partida">22</a>
+                    <!-- Pontos da casa -->
+                    <a class="pontos-partida" *ngIf="visitante">{{pontosAdversario}}</a>
+                    <a class="pontos-partida" *ngIf="!visitante">{{pontosSJ}}</a>
                 </div>
-           </div>
-           <div class="row">
-            <div class="saque"></div>
-           </div>
+            </div>
+            <div class="row">
+                <div class="saque"></div>
+            </div>
         </div>
 
-        <div class="">
+        <div style="opacity: 0;">
             <div class="pai-bolinhas">
                 <div class="filho-bolinhas">
                     <div class="row">
                         <div class="bolinha"></div>
                     </div>
                     <div class="row">
-                            <div class="bolinha"></div>
+                        <div class="bolinha"></div>
                     </div>
-                
+
                 </div>
 
                 <div class="col">
                     <p class="titulo-tempo-tecnico">TEMPO TECNICO </p>
                 </div>
-                
+
                 <div class="filho-bolinhas">
                     <div class="row">
                         <div class="bolinha"></div>
@@ -42,50 +45,54 @@
                 </div>
             </div>
             <div class="row">
-                    <div class="filho-bolinhas">
-                        <div class="row">
-                            <div class="bolinha"></div>
-                        </div>
-                        <div class="row">
-                                <div class="bolinha"></div>
-                        </div>
-                    
+                <div class="filho-bolinhas">
+                    <div class="row">
+                        <div class="bolinha"></div>
                     </div>
-                    <div class="col">
-                        <p class="titulo-desafio">DESAFIO</p>
-                        
+                    <div class="row">
+                        <div class="bolinha"></div>
                     </div>
-                    <div class="filho-bolinhas">
-                        <div class="row">
-                            <div class="bolinha"></div>
-                        </div>
-                        <div class="row">
-                            <div class="bolinha"></div>
-                        </div>
-    
-                    </div>
+
                 </div>
-         </div>
-         <div class="">
-             <div class="">
-                 <div class="potuacao-partida">
-                     <a class="pontos-partida">22</a>
-                 </div>
+                <div class="col">
+                    <p class="titulo-desafio">DESAFIO</p>
+
+                </div>
+                <div class="filho-bolinhas">
+                    <div class="row">
+                        <div class="bolinha"></div>
+                    </div>
+                    <div class="row">
+                        <div class="bolinha"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <div class="potuacao-partida">
+                    <!-- Pontos do Visitante -->
+                    <a class="pontos-partida" *ngIf="!visitante">{{pontosAdversario}}</a>
+                    <a class="pontos-partida" *ngIf="visitante">{{pontosSJ}}</a>
+                </div>
             </div>
             <div class="row">
-             <div class="saque"></div>
+                <div class="saque"></div>
             </div>
-           
+
         </div>
-        <a class= "pontos-set">1</a>
+        <a class="pontos-set" *ngIf="visitante">{{totalSetsSJ}}</a>
+        <a class="pontos-set" *ngIf="!visitante">{{totalSetsAdversario}}</a>
     </div>
 
-    <div id="lista-resultado-sets">
-        <a class= "resultado_sets">22x20</a>
-        <a class= "resultado_sets"> | 12x14  </a>
-        <a class= "resultado_sets_cinza"> | 00x00  </a>
-        <a class= "resultado_sets_cinza"> | 00x00  </a>
-        <a class= "resultado_sets_cinza"> | 00x00  </a>
+    <div id="lista-resultado-sets" *ngIf="!visitante">
+        <p class="resultado_sets" style="margin-right: 15px;">Sets:</p>
+        <p *ngFor="let item of setsPartida" class="resultado_sets">{{item.pontoA}}x{{item.pontoB}}</p>
     </div>
-   
+    <div id="lista-resultado-sets" *ngIf="visitante">
+        <p class="resultado_sets" style="margin-right: 15px;">Sets:</p>
+        <p *ngFor="let item of setsPartida" class="resultado_sets">{{item.pontoB}}x{{item.pontoA}}</p>
+    </div>
+
 </div>

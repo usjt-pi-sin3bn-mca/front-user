@@ -14,26 +14,24 @@
   <div class="position-filhos">
 
     <div class="position-super-liga">
-      <p class="super-liga">
-        SUPERLIGA 2018/2019
-      </p>
+      <p class="super-liga">{{nomeLiga}}</p>
     </div>
 
     <div class="position-rodada">
       <p class="rodada">
-        10º RODADA - JOGO 125
+        {{rodada}}º RODADA
       </p>
     </div>
 
     <div class="position-ginasio">
       <p class="ginasio">
-        Ginásio Abaeté - Taubaté, SP
+        {{Local}}
       </p>
     </div>
 
     <div class="position-data">
       <p class="data">
-        09/03/2018 | 18:30
+       {{dataPartida}} | {{horario}}
       </p>
     </div>
 
@@ -44,8 +42,10 @@
 <div class="pai-times-partida flex">
 
   <div class="time1-partida flex">
-    <img src="../../assets/imgs/time-1.png" class="escudos" />
-    <p>time x</p>
+    <img src="../../assets/imgs/logo-usjt.png" class="escudos" *ngIf="!visitante" />
+    <p *ngIf="!visitante">São Judas</p>
+    <img src="../../assets/imgs/time-1.png" class="escudos" *ngIf="visitante"/>
+    <p *ngIf="visitante">{{nomeAdversario}}</p>
   </div>
 
   <div class="flex">
@@ -53,7 +53,9 @@
   </div>
 
   <div class="time1-partida flex">
-    <img src="../../assets/imgs/time-1.png" class="escudos" />
-    <p>time x</p>
+      <img src="../../assets/imgs/logo-usjt.png" class="escudos" *ngIf="visitante" />
+      <p *ngIf="visitante">São Judas</p>
+      <img src="../../assets/imgs/time-1.png" class="escudos" *ngIf="!visitante"/>
+      <p *ngIf="!visitante">{{nomeAdversario}}</p>
   </div>
 </div>
