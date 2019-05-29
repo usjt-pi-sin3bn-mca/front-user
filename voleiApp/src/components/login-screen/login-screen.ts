@@ -17,8 +17,6 @@ export class LoginScreenComponent {
   text: string;
 
   constructor(public navCtrl: NavController) {
-    console.log('Hello LoginScreenComponent Component');
-    this.text = 'Hello World';
   }
 
   goForm() {

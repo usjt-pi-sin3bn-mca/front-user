@@ -20,7 +20,7 @@ export class CuponsDescontosComponent {
   }
 
   gerarCupom(nome : string) {
-    alert('Gerou cupom de ' + nome + '!')
+    alert('Gerou cupom de ' + nome + ': Y84HB4U73Y8Y37RGH')
   }
 
 }
