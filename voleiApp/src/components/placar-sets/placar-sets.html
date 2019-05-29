@@ -3,11 +3,12 @@
     
     <div class="placar-sets-pai">
 
-        <a class= "pontos-set">1</a>
+        <a class= "pontos-set">{{totalSetsSJ}}</a>
         <div class="pai-placar">
             <div class="filho-placar">
                 <div class="potuacao-partida">
-                    <a class="pontos-partida">22</a>
+                    <!-- Pontos São Judas -->
+                    <a class="pontos-partida">{{pontosSJ}}</a>
                 </div>
            </div>
            <div class="row">
@@ -69,7 +70,8 @@
          <div class="">
              <div class="">
                  <div class="potuacao-partida">
-                     <a class="pontos-partida">22</a>
+                     <!-- Pontos do Adversário -->
+                     <a class="pontos-partida">{{pontosAdversario}}</a>
                  </div>
             </div>
             <div class="row">
@@ -77,10 +79,11 @@
             </div>
            
         </div>
-        <a class= "pontos-set">1</a>
+        <a class= "pontos-set">{{totalSetsAdversario}}</a>
     </div>
 
     <div id="lista-resultado-sets">
+        
         <a class= "resultado_sets">22x20</a>
         <a class= "resultado_sets"> | 12x14  </a>
         <a class= "resultado_sets_cinza"> | 00x00  </a>
