@@ -29,7 +29,7 @@ export class PlacarOnlineComponent {
   pontosAdversario: number;
   totalSetsSJ: any;
   totalSetsAdversario: any;
-  visitante: boolean;
+  visitante: boolean = false;
 
 
   constructor(public _dadosPlacar: DadosPlacarProvider) {
@@ -49,6 +49,7 @@ export class PlacarOnlineComponent {
         this.nomeAdversario = this.partidaAtual.timeB;
         this.totalSetsSJ = this.partidaAtual.totalSetsTimeA;
         this.totalSetsAdversario = this.partidaAtual.totalSetsTimeB;
+        this.visitante =  this.partidaAtual.visitante;
 
         console.log("kk", this.rodada);
 

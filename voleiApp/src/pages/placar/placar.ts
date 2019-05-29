@@ -19,7 +19,7 @@ export class PlacarPage {
   obj: any;
   result: any;
   partidaAtual: any;
-  emAndamento: boolean = true;
+  emAndamento: boolean = false;
   
   constructor(public navCtrl: NavController, public navParams: NavParams, public _dadosPlacar: DadosPlacarProvider) {
   }
