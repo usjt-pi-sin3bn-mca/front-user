@@ -86,13 +86,13 @@
         <a class="pontos-set" *ngIf="!visitante">{{totalSetsAdversario}}</a>
     </div>
 
-    <div id="lista-resultado-sets">
-
-        <a class="resultado_sets">22x20</a>
-        <a class="resultado_sets"> | 12x14 </a>
-        <a class="resultado_sets_cinza"> | 00x00 </a>
-        <a class="resultado_sets_cinza"> | 00x00 </a>
-        <a class="resultado_sets_cinza"> | 00x00 </a>
+    <div id="lista-resultado-sets" *ngIf="!visitante">
+        <p class="resultado_sets" style="margin-right: 15px;">Sets:</p>
+        <p *ngFor="let item of setsPartida" class="resultado_sets">{{item.pontoA}}x{{item.pontoB}}</p>
+    </div>
+    <div id="lista-resultado-sets" *ngIf="visitante">
+        <p class="resultado_sets" style="margin-right: 15px;">Sets:</p>
+        <p *ngFor="let item of setsPartida" class="resultado_sets">{{item.pontoB}}x{{item.pontoA}}</p>
     </div>
 
 </div>

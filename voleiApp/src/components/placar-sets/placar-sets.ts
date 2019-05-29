@@ -18,6 +18,8 @@ export class PlacarSetsComponent {
   setsPartida: any;
   pontosSJ: any;
   pontosAdversario: any;
+  totalSetsSJ: number;
+  totalSetsAdversario: number;
 
   constructor(public _dadosPlacar: DadosPlacarProvider) {
     this.getSets();
@@ -31,9 +33,12 @@ export class PlacarSetsComponent {
     this._dadosPlacar.getAllPartidas()
     .then(data => {
       this.obj = data;
-      this.setsPartida = this.obj[0].sets;
+      let partidaAtual = this.obj[11];
+      this.setsPartida = partidaAtual.sets;
       this.pontosSJ =  this.setsPartida[0].pontoA;
       this.pontosAdversario =  this.setsPartida[0].pontoB;
+      this.totalSetsSJ = partidaAtual.totalSetsTimeA;
+      this.totalSetsAdversario = partidaAtual.totalSetsTimeB;
       
       console.log("eae", this.pontosSJ);
 

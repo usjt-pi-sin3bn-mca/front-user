@@ -42,10 +42,10 @@
 <div class="pai-times-partida flex">
 
   <div class="time1-partida flex">
-    <img src="../../assets/imgs/logo-usjt.png" class="escudos" *ngIf="visitante" />
-    <p *ngIf="visitante">São Judas</p>
-    <img src="../../assets/imgs/time-1.png" class="escudos" *ngIf="!visitante"/>
-    <p *ngIf="!visitante">{{nomeAdversario}}</p>
+    <img src="../../assets/imgs/logo-usjt.png" class="escudos" *ngIf="!visitante" />
+    <p *ngIf="!visitante">São Judas</p>
+    <img src="../../assets/imgs/time-1.png" class="escudos" *ngIf="visitante"/>
+    <p *ngIf="visitante">{{nomeAdversario}}</p>
   </div>
 
   <div class="flex">
@@ -53,9 +53,9 @@
   </div>
 
   <div class="time1-partida flex">
-      <img src="../../assets/imgs/logo-usjt.png" class="escudos" *ngIf="!visitante" />
-      <p *ngIf="!visitante">São Judas</p>
-      <img src="../../assets/imgs/time-1.png" class="escudos" *ngIf="visitante"/>
-      <p *ngIf="visitante">{{nomeAdversario}}</p>
+      <img src="../../assets/imgs/logo-usjt.png" class="escudos" *ngIf="visitante" />
+      <p *ngIf="visitante">São Judas</p>
+      <img src="../../assets/imgs/time-1.png" class="escudos" *ngIf="!visitante"/>
+      <p *ngIf="!visitante">{{nomeAdversario}}</p>
   </div>
 </div>
