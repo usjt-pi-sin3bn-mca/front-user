@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-
-import { UserProvider } from '../../providers/user/user';
+import { CadastroPage } from '../../pages/cadastro/cadastro';
 import { NavController, NavParams } from 'ionic-angular';
+import { UserProvider } from '../../providers/user/user';
 import { HomePage } from '../../pages/home/home';
 
 
@@ -43,8 +43,9 @@ export class LoginScreenComponent {
         console.log('Your age is', val);
       });
     }
-  
- 
-       
-      
+    goForm() {
+      this.navCtrl.setRoot(CadastroPage);
+    }
   }
+
+

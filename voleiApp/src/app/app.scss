@@ -32,8 +32,14 @@ ion-content {
   
   
   .scroll-content {
-    padding: 0 !important;
-    margin-top: 20px;
+    padding: 40px 0 !important;
+  }
+
+  .menu-inner {
+    .scroll-content {
+      background-color: #092336;
+      margin-top: 20px !important;
+    }
   }
 
   ion-list,

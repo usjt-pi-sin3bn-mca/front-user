@@ -33,13 +33,12 @@ export class MyApp {
       { title: 'Login', component: LoginPage },
       { title: 'Home', component: HomePage },
       { title: 'Cadastro', component: CadastroPage },
-      { title: 'Test', component: TestPage },
       { title: 'Placar Online', component: PlacarPage },
       { title: 'Espaço do Torcedor', component: EspacoTorcedorPage },
       { title: "Marketplace", component: MarketPage},
       { title: 'Cupons de Desconto', component: CuponsDeDescontoPage },
       { title: 'Loja da Torcida', component: LojaPage },
-      { title: 'Seus Pontos', component: SeusPontosPage }      
+      { title: 'Meus Pontos', component: SeusPontosPage }      
     ];
 
   }

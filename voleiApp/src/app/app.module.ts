@@ -38,6 +38,7 @@ import { HomeMenuComponent } from '../components/home-menu/home-menu';
 import { AppSeusPontosComponent } from '../components/app-seus-pontos/app-seus-pontos';
 import { EspacoDoTorcedorComponent } from '../components/espaco-do-torcedor/espaco-do-torcedor';
 import { MarketplaceComponent } from '../components/marketplace/marketplace';
+import { DadosPlacarProvider } from '../providers/dados-placar/dados-placar';
 import { CadastroScreenComponent } from '../components/cadastro-screen/cadastro-screen';
 
 import { UserProvider } from '../providers/user/user';
@@ -112,7 +113,8 @@ import { UserProvider } from '../providers/user/user';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    UserProvider
+    UserProvider,
+    DadosPlacarProvider
   ]
 })
 export class AppModule {}
