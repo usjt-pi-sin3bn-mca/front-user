@@ -1,6 +1,12 @@
 import { Component } from '@angular/core';
 import { CadastroPage } from '../../pages/cadastro/cadastro';
-import { NavController } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
+import { UserProvider } from '../../providers/user/user';
+import { HomePage } from '../../pages/home/home';
+
+
+
+
 
 /**
  * Generated class for the LoginScreenComponent component.
@@ -14,12 +20,32 @@ import { NavController } from 'ionic-angular';
 })
 export class LoginScreenComponent {
 
-  text: string;
 
-  constructor(public navCtrl: NavController) {
+  usuario: object = {
+    email: "",
+    senha: ""
+  };
+  constructor(public navCtrl: NavController, public navParams: NavParams, public _userProvider: UserProvider ) {
+    // this.user.email = "";
+    // this.user.senha = "";
   }
 
-  goForm() {
-    this.navCtrl.setRoot(CadastroPage);
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad LoginPage');
   }
-}
+
+
+  fazerLogin(){
+      this._userProvider.loginUsuario(this.usuario);  
+    console.log();
+      this.navCtrl.setRoot(HomePage);
+      this._userProvider._session.get('logado').then((val) => {
+        console.log('Your age is', val);
+      });
+    }
+    goForm() {
+      this.navCtrl.setRoot(CadastroPage);
+    }
+  }
+
+

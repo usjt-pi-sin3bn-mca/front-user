@@ -4,6 +4,8 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { CommonModule } from "@angular/common";
 import { NgModule } from '@angular/core';
 
+import { IonicStorageModule } from '@ionic/storage';
+
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { CadastroPage } from '../pages/cadastro/cadastro';
@@ -39,6 +41,8 @@ import { MarketplaceComponent } from '../components/marketplace/marketplace';
 import { DadosPlacarProvider } from '../providers/dados-placar/dados-placar';
 import { CadastroScreenComponent } from '../components/cadastro-screen/cadastro-screen';
 
+import { UserProvider } from '../providers/user/user';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -72,6 +76,7 @@ import { CadastroScreenComponent } from '../components/cadastro-screen/cadastro-
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
+    IonicStorageModule.forRoot() ,// import do pacotre IonicStorageModule
     HttpClientModule,
     CommonModule
   ],
@@ -108,6 +113,7 @@ import { CadastroScreenComponent } from '../components/cadastro-screen/cadastro-
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
+    UserProvider,
     DadosPlacarProvider
   ]
 })

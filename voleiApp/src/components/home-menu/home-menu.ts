@@ -6,6 +6,7 @@ import { LojaPage } from '../../pages/loja/loja';
 import { SeusPontosPage } from '../../pages/seus-pontos/seus-pontos';
 import { EspacoTorcedorPage } from '../../pages/espaco-torcedor/espaco-torcedor';
 import { MarketPage } from '../../pages/market/market';
+import { Storage } from '@ionic/storage';
 
 /**
  * Generated class for the HomeMenuComponent component.
@@ -20,8 +21,14 @@ import { MarketPage } from '../../pages/market/market';
 export class HomeMenuComponent {
 
   text: string;
+  val = true;
 
-  constructor(public navCtrl: NavController) {}
+  constructor(public navCtrl: NavController, public _session: Storage) {
+    
+    _session.get('logado').then((val) => {
+      console.log('Logado?', val);
+    });
+  }
 
   irPlacar() {
     this.navCtrl.setRoot(PlacarPage);
