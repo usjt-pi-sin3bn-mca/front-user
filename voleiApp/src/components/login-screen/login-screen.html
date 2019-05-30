@@ -5,19 +5,28 @@
     <p><label id="lblVolei" type="text">São Judas Voleibol!</label></p>
   </div>
 
-  <form class="form-login">
-    <div id="inpLogin" text-center>
-      <input type="text" style="min-width:80%;" placeholder="Digite seu email.">
-    </div>
+  <ion-list>
+    <form class="form-login">
+      <ion-item>
+        <div id="inpLogin" text-center>
+          <input type="text" [(ngModel)]="usuario.email" name="email" style="min-width:80%;" placeholder="Digite seu email.">
+        </div>
+      </ion-item>
 
-    <div id="inpSenha" text-center>
-      <input type="password" style="min-width: 80%;" placeholder="Digite sua senha.">
-    </div>
+      <ion-item>
+        <div id="inpSenha" text-center>
+          <input type="password" [(ngModel)]="usuario.senha" name="password" style="min-width: 80%;" placeholder="Digite sua senha.">
+        </div>
+      </ion-item>
 
-    <button id="btnAcessar" ion-button color="dark" ion-button full style="text-align:center;">ACESSAR</button>
+
+      <button id="btnAcessar" (click)="fazerLogin()" ion-button color="dark" ion-button full
+        style="text-align:center;">ACESSAR</button>
       <div class="campoCadastro">
         <label id="lblPrimeiroAcesso">Primeiro Acesso?</label>
-          <a (click)="goForm()" id="linkCadastro">Cadastre-se aqui!</a>
+        <a (click)="goForm()" id="linkCadastro">Cadastre-se aqui!</a>
       </div>
-  </form>
+    </form>
+  </ion-list>
+
 </div>

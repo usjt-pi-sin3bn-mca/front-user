@@ -15,6 +15,10 @@ div {
         top: 12%;
     }
 
+    input {
+        color: #000;
+    }
+
     #inpLogin {
         margin-left: auto;
         margin-right: auto;
@@ -95,4 +99,13 @@ div {
         z-index: 2;
         top: 12%;
     }
+}
+
+ion-list {
+    background-color: transparent !important;
+}
+
+
+.item-ios {
+    background-color: transparent !important;
 }

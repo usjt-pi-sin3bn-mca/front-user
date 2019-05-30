@@ -4,10 +4,6 @@ import { NavController, NavParams } from 'ionic-angular';
 import { UserProvider } from '../../providers/user/user';
 import { HomePage } from '../../pages/home/home';
 
-
-
-
-
 /**
  * Generated class for the LoginScreenComponent component.
  *
@@ -36,16 +32,21 @@ export class LoginScreenComponent {
 
 
   fazerLogin(){
-      this._userProvider.loginUsuario(this.usuario);  
-    console.log();
-      this.navCtrl.setRoot(HomePage);
-      this._userProvider._session.get('logado').then((val) => {
-        console.log('Your age is', val);
-      });
-    }
-    goForm() {
-      this.navCtrl.setRoot(CadastroPage);
-    }
+    this._userProvider.loginUsuario(this.usuario);  
+    console.log("usuario ", this.usuario);
+    console.log("logado ", this._userProvider.logado);
+
+    // if (this._userProvider.logado) {
+    //   this.navCtrl.setRoot(HomePage);
+    // }
+    // this._userProvider._session.get('logado').then((val) => {
+    //   console.log('Your age is', val);
+    // });
   }
+  
+  goForm() {
+    this.navCtrl.setRoot(CadastroPage);
+  }
+}
 
 

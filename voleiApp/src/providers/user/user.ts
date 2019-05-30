@@ -11,16 +11,16 @@ import { Storage } from '@ionic/storage';
   and Angular DI.
 */
 @Injectable()
-export  class  UserProvider  {
-  private baseApiPath = 'http://localhost:8080/api/';
+export class UserProvider  {
+  private baseApiPath = 'http://maestro.lucasduarte.club/api/';
   public apiResult: any;
   listaPartidas: any;
   partidaAtual: any;
   data: any;
   headers: any;
   usuario :Usuario;
-  logado: any = false;
-  _session : Storage;
+  logado: any;
+  _session: Storage;
 
   id: object={
         id: Number
@@ -28,7 +28,7 @@ export  class  UserProvider  {
 
   constructor(public http: HttpClient) {
     console.log('Testando o Provider usuario');
-    this._session.set('logado', this.logado);
+      //this._session.set('logado', this.logado);
   }
 
   getToken(): string{
@@ -40,25 +40,26 @@ export  class  UserProvider  {
         console.log('que isso aqui'+user);
       return new Promise(
             result => {
-                  this.http.post(this.baseApiPath + 'torcedor/logar', user,{
-                        headers: new HttpHeaders().set('Content-Type', 'application/json')
-                  })
+                  this.http.post(this.baseApiPath + 'torcedor/logar/', user
+                  // ,{
+                  //       headers: new HttpHeaders().set('Content-Type', 'application/json')
+                  // }
+                  )
                         .subscribe(data => {
                               console.log(data);
+                              this.logado = true;
                               this.usuario =  data as Usuario;
-                              console.log( this.usuario);
-                              this._session.set('logado', true);
-                             
+                              console.log("passou na request");
+                              
+                              //this._session.set('logado', true);
                               
                         }, (error) => {
-                              console.log(error);
-                              this.logado = true;
+                              console.log("deu ruim", error);
                         });
             }
       );
   }
   cadastroInicialUsuario(user) {
-        
       return new Promise(
             result => {
                   this.http.post(this.baseApiPath + 'torcedor/', user,{
@@ -89,10 +90,11 @@ export  class  UserProvider  {
                               console.log(data);
                               this.usuario =  data as Usuario;
                               console.log( this.usuario);
-                             
-                              
+                              this.logado = true;
+
                         }, (error) => {
                               console.log(error);
+                              this.logado = false;
                         });
             }
       );
