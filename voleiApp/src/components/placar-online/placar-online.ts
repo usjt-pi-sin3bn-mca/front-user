@@ -29,6 +29,7 @@ export class PlacarOnlineComponent {
   pontosAdversario: number;
   totalSetsSJ: any;
   totalSetsAdversario: any;
+  logoAdversario: string;
   visitante: boolean = false;
 
 
@@ -40,7 +41,7 @@ export class PlacarOnlineComponent {
   getAtual() {
     this._dadosPlacar.getAllPartidas()
       .then(data => {
-        this.obj = data.reverse();
+        this.obj = data;
         this.partidaAtual = this.obj[0];
         this.nomeLiga = this.partidaAtual.campeonato;
         this.pontuacaoSJ = '';
@@ -50,6 +51,7 @@ export class PlacarOnlineComponent {
         this.totalSetsSJ = this.partidaAtual.totalSetsTimeA;
         this.totalSetsAdversario = this.partidaAtual.totalSetsTimeB;
         this.visitante =  this.partidaAtual.visitante;
+        this.logoAdversario = this.partidaAtual.urlLogoAdv;
 
         console.log("kk", this.rodada);
 

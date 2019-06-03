@@ -18,6 +18,7 @@ import { HomePage } from '../../pages/home/home';
 export class AppHeaderComponent {
   user : Usuario = UsuarioLogado.getInstance().getUsuario();
   
+  
 
   constructor(public navCtrl: NavController ) {
     console.log('Hello AppHeaderComponent Component');

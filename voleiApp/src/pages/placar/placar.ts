@@ -31,7 +31,7 @@ export class PlacarPage {
   getAtual() {
     this._dadosPlacar.getAllPartidas()
       .then(data => {
-        this.obj = data;
+        this.obj = data.reverse();
         this.partidaAtual = this.obj[0];
         console.log(this.partidaAtual);
         if (this.partidaAtual.partidaFinalizada == false && this.partidaAtual.partidaIniciada == true) {

@@ -44,7 +44,7 @@
   <div class="time1-partida flex">
     <img src="../../assets/imgs/logo-usjt.png" class="escudos" *ngIf="!visitante" />
     <p *ngIf="!visitante">São Judas</p>
-    <img src="../../assets/imgs/time-1.png" class="escudos" *ngIf="visitante"/>
+    <img src="{{logoAdversario}}" class="escudos" *ngIf="visitante"/>
     <p *ngIf="visitante">{{nomeAdversario}}</p>
   </div>
 
@@ -55,7 +55,7 @@
   <div class="time1-partida flex">
       <img src="../../assets/imgs/logo-usjt.png" class="escudos" *ngIf="visitante" />
       <p *ngIf="visitante">São Judas</p>
-      <img src="../../assets/imgs/time-1.png" class="escudos" *ngIf="!visitante"/>
+      <img src="{{logoAdversario}}" class="escudos" *ngIf="!visitante"/>
       <p *ngIf="!visitante">{{nomeAdversario}}</p>
   </div>
 </div>

@@ -32,8 +32,8 @@ export class PlacarSetsComponent {
   getSets() {
     this._dadosPlacar.getAllPartidas()
     .then(data => {
-      this.obj = data;
-      let partidaAtual = this.obj[11];
+      this.obj = data.reverse();
+      let partidaAtual = this.obj[0];
       this.setsPartida = partidaAtual.sets;
       this.pontosSJ =  this.setsPartida[0].pontoA;
       this.pontosAdversario =  this.setsPartida[0].pontoB;
