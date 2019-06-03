@@ -6,7 +6,7 @@ import { LojaPage } from '../../pages/loja/loja';
 import { SeusPontosPage } from '../../pages/seus-pontos/seus-pontos';
 import { EspacoTorcedorPage } from '../../pages/espaco-torcedor/espaco-torcedor';
 import { MarketPage } from '../../pages/market/market';
-import { Storage } from '@ionic/storage';
+import { UsuarioLogado } from '../../model/UsuarioLogado';
 
 /**
  * Generated class for the HomeMenuComponent component.
@@ -23,11 +23,12 @@ export class HomeMenuComponent {
   text: string;
   val = true;
 
-  constructor(public navCtrl: NavController, public _session: Storage) {
+  constructor(public navCtrl: NavController) {
     
-    _session.get('logado').then((val) => {
-      console.log('Logado?', val);
-    });
+   
+  }
+  ionViewDidLoad() {
+    console.log("OLHA AQUI", UsuarioLogado.getInstance().getUsuario());
   }
 
   irPlacar() {

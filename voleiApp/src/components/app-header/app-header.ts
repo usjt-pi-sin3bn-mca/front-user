@@ -1,5 +1,10 @@
 import { Component } from '@angular/core';
 
+import { UsuarioLogado } from '../../model/UsuarioLogado';
+import { Usuario } from '../../model/Usuario';
+import { NavController } from 'ionic-angular';
+import { HomePage } from '../../pages/home/home';
+
 /**
  * Generated class for the AppHeaderComponent component.
  *
@@ -11,11 +16,15 @@ import { Component } from '@angular/core';
   templateUrl: 'app-header.html'
 })
 export class AppHeaderComponent {
+  user : Usuario = UsuarioLogado.getInstance().getUsuario();
+  
 
-  usuario: string = "Usuario";
-
-  constructor() {
+  constructor(public navCtrl: NavController ) {
     console.log('Hello AppHeaderComponent Component');
+   
+  }
+  goHome(){
+    this.navCtrl.setRoot(HomePage);
   }
 
 }

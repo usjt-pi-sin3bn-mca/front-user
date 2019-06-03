@@ -32,7 +32,8 @@ ion-content {
   
   
   .scroll-content {
-    padding: 40px 0 !important;
+    padding: 0px 0 !important;
+ 
   }
 
   .menu-inner {
@@ -42,6 +43,9 @@ ion-content {
     }
   }
 
+  ion-header{
+    display: none;
+  }
   ion-list,
   ion-header,
   .item-ios {
@@ -56,10 +60,10 @@ ion-content {
     color: #fff;
   }
 
-  ion-header {
-    padding-top: 15px;
-    position: fixed;
-  }
+  // ion-header {
+  //   padding-top: 15px;
+  //   position: fixed;
+  // }
 
   ion-list {
     height: 100%;
@@ -70,7 +74,7 @@ ion-content {
   }
 
   .toolbar-background {
-    background-color: #092336;
+    background-color: transparent;
   }
 
   input {

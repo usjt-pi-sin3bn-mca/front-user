@@ -1,22 +1,46 @@
 <!-- Generated template for the CadastroScreenComponent component -->
 <div>
-  <div class="formulario">
-    <label class="lblCadastroDeUsuario" type="text">Cadastro de Usuário</label>
-    <img class="imgUser" src="../assets/imgs/user.png">
     
-    <div class="preencher">
-      <input type="text" id="inpNome"  placeholder="Nome.">
-      <input type="text" id="inpEmail" placeholder="Email.">
-      <input type="password" id="inpSenha" placeholder="Senha.">
-      <input type="password" id="inpConfirmaSenha" placeholder="Confirme sua senha.">
-      <!-- <input type="checkbox" id="checkSocio" name="socio" value=" Socio">Sócio<br> -->
-      <select class="selectSocioUsuario" aria-placeholder="Selecionar tipo ----">
-          <option id="selectSelecionar" value="selecionar">--- Selecionar tipo de usuário ---</option> 
-          <option id="selectUsuario" value="usuario">Usuário</option>
-          <option id="selectSocio" value="socio">Sócio</option>
-      </select>
-      <button id="btnCadastrar" ion-button color="dark" ion-button full style="text-align:center;">CADASTRAR</button>
-    </div>
+  <div class="formulario">
+    <label class="lblCadastroDeUsuario" type="text">Cadastro de Torcedor</label>
+    <img class="imgUser" src="../assets/imgs/user.png">
+    <ion-list>  
+      <div class="preencher">
+      <ion-item no-lines  class="item-list">
+        <input class= "inp" type="text" [(ngModel)]="usuario.nome" placeholder="Nome.">
+      </ion-item>
+      <ion-item  no-lines class="item-list">
+        <input  class= "inp"type="text" [(ngModel)]="usuario.email" placeholder="Email.">
+      </ion-item>
+        <div class="serSocio" *ngIf="usuario.socio" >
+          <ion-item  no-lines  class="item-list">
+           <input  class= "inp" type="text" [(ngModel)]="usuario.cpf" placeholder="CPF.">
+          </ion-item>
+          <ion-item no-lines  class="item-list">
+            <input class= "inp" type="text" [(ngModel)]="usuario.celular"placeholder="Celular.">
+          </ion-item>
+          <ion-item no-lines  class="item-list">
+            <input class= "inp" type="text" [(ngModel)]="usuario.endereco"placeholder="Endereço.">
+          </ion-item>
+          <ion-item no-lines  class="item-list">
+            <input class= "inp" type="text" [(ngModel)]="usuario.genero"placeholder="Genero.">
+          </ion-item>
+          <ion-item  no-lines  class="item-list">
+            <input class= "inp" type="text" [(ngModel)]="usuario.dataNascimento" placeholder="Data de Nascimento.">
+          </ion-item>
+        </div>
+      <ion-item no-lines  class="item-list">
+        <input  class= "inp" [(ngModel)]="usuario.senha" type="password"  placeholder="Senha.">
+      </ion-item>
+        <!-- <input type="checkbox" id="checkSocio" name="socio" value=" Socio">Sócio<br> -->
+        <select class="selectSocioUsuario" (change)="selectInput($event)" aria-placeholder="Selecionar tipo ----">
+            <option id="selectSelecionar" value="selecionar">--- Selecionar tipo de usuário ---</option> 
+            <option id="selectUsuario" value="usuario">Usuário</option>
+            <option id="selectSocio" value="socio">Sócio</option>
+        </select>
+        <button id="btnCadastrar" (click)="cadatroSimples()" ion-button color="dark" ion-button full style="text-align:center;">CADASTRAR</button>
+      </div>
+  </ion-list>
   
   </div>
 </div>

@@ -1,5 +1,10 @@
 import { Component } from '@angular/core';
 
+import { Usuario } from '../../model/Usuario';
+import { UserProvider } from '../../providers/user/user';
+import { LoginPage } from '../../pages/login/login';
+import { NavController, NavParams } from 'ionic-angular';
+
 /**
  * Generated class for the CadastroScreenComponent component.
  *
@@ -11,12 +16,48 @@ import { Component } from '@angular/core';
   templateUrl: 'cadastro-screen.html'
 })
 export class CadastroScreenComponent {
-
-  text: string;
-
-  constructor() {
-    console.log('Hello CadastroScreenComponent Component');
-    this.text = 'Hello World';
+  usuario : Usuario = {
+    celular: "",
+    contaAtiva:  "",
+    cpf: "",
+    dataNascimento:  "",
+    email:  "",
+    endereco:  "",
+    genero: "",
+    id: "",
+    nome:"",
+    pontos: "",
+    socio: false
   }
+  
+  constructor(public navCtrl: NavController, public navParams: NavParams, public _userProvider : UserProvider) {
+    
+  }
+
+  cadastrar(socio){
+    console.log("OLHA AQUI "+ socio)
+  }
+  
+  showFields(arg) {
+    console.log(arg);
+    this.usuario.socio = arg;
+  }
+  cadatroSimples(){
+    console.log("OLHA AQUI "+ this.usuario)
+     if( this._userProvider.cadastroInicialUsuario(this.usuario))
+      this.navCtrl.setRoot(LoginPage);
+      else
+      console.log("deu ruim ");
+  }
+ 
+  selectInput(event) {
+    let selected = event.target.value;
+    if (selected == "socio") {
+      this.usuario.socio = true;
+    } else {
+      this.usuario.socio = false;
+    }
+  }
+ 
 
 }

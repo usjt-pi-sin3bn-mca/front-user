@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { UsuarioLogado } from '../../model/UsuarioLogado';
+
 
 // import { Usuario } from '../../model/Usuario';
 
@@ -26,8 +28,11 @@ export class LoginPage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad LoginPage');
+    console.log("Teste", UsuarioLogado.getInstance().getUsuario()) 
+    
   }
+  
+
 
 
 

@@ -42,6 +42,9 @@ import { DadosPlacarProvider } from '../providers/dados-placar/dados-placar';
 import { CadastroScreenComponent } from '../components/cadastro-screen/cadastro-screen';
 
 import { UserProvider } from '../providers/user/user';
+import { GlobalProvider } from '../providers/global/global';
+import { PontuacaoProvider } from '../providers/pontuacao/pontuacao';
+
 
 @NgModule({
   declarations: [
@@ -114,7 +117,9 @@ import { UserProvider } from '../providers/user/user';
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     UserProvider,
-    DadosPlacarProvider
+    DadosPlacarProvider,
+    GlobalProvider,
+    PontuacaoProvider
   ]
 })
 export class AppModule {}

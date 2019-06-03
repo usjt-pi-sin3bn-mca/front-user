@@ -1,14 +1,18 @@
 cadastro-screen {
-
+    .item-list{
+        background: transparent;
+        height: 0px;
+    }
     .formulario {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 75%;
+        width: 360px;
+        height: 10px;
         margin-left: auto;
         margin-right: auto;
         position: relative;
-        top: 30px;
+        top: 20px;
         
         .lblCadastroDeUsuario {
             font-weight: bold;
@@ -17,7 +21,7 @@ cadastro-screen {
             margin-left: auto;
             position: relative;
             position: relative;
-            top: -50px;
+            top: 5px;
             font-size: 25px;
             text-shadow: 5px 5px 10px #34495e;
             letter-spacing: 1px;
@@ -26,17 +30,20 @@ cadastro-screen {
         .imgUser {
             margin-left: auto;
             margin-right: auto;
-            margin-bottom: 20px;
-            width: 55%;
+            margin-top: 15px;
+            width: 25%;
         }
+        // .serSocio{
+        //      display:none;
+        // }
 
         .preencher {
+            
 
-            #inpNome, #inpEmail, #inpSenha, #inpConfirmaSenha {
+            .inp {
                 width: 100%;
-                margin-top: 10px;
                 border-radius: 20px;
-                padding: 8px;
+               
                 box-shadow: none;
                 border: 0;
                 padding-left: 10px;
@@ -50,11 +57,12 @@ cadastro-screen {
             // }
 
             .selectSocioUsuario {
-                margin-top: 20px;
+                margin-top: 5px;
                 font-weight: bold;
                 border-radius: 20px;
-                width: 100%;
+                width: 90%;
                 padding: 8px;
+                margin-left: 15px;
                 padding-left: 30px;
                 color: #636e72;
                 font-weight: bold;
@@ -62,7 +70,7 @@ cadastro-screen {
                 #selectUsuario, #selectSocio {
                     color: #636e72;
                     font-size: 13px;
-                    padding-left: 3px;
+                    padding-left: 0px;
                 }
             }
 
