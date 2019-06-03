@@ -16,7 +16,7 @@ import { NavController, NavParams } from 'ionic-angular';
   templateUrl: 'cadastro-screen.html'
 })
 export class CadastroScreenComponent {
-  usuario : Usuario = {
+  usuario : any = {
     celular: "",
     contaAtiva:  "",
     cpf: "",
@@ -28,6 +28,12 @@ export class CadastroScreenComponent {
     nome:"",
     pontos: "",
     socio: false
+  }
+
+  cadastroSimples: any = {
+    email: "",
+    senha:"",
+    nome:""
   }
   
   constructor(public navCtrl: NavController, public navParams: NavParams, public _userProvider : UserProvider) {
@@ -44,7 +50,10 @@ export class CadastroScreenComponent {
   }
   cadatroSimples(){
     console.log("OLHA AQUI "+ this.usuario)
-     if( this._userProvider.cadastroInicialUsuario(this.usuario))
+    this.cadastroSimples.nome = this.usuario.nome;
+    this.cadastroSimples.senha = this.usuario.senha;
+    this.cadastroSimples.email = this.usuario.email;
+     if( this._userProvider.cadastroInicialUsuario(this.usuario, this.cadastroSimples))
       this.navCtrl.setRoot(LoginPage);
       else
       console.log("deu ruim ");

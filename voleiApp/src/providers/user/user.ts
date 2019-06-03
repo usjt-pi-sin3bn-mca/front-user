@@ -34,14 +34,15 @@ export class UserProvider  {
                               
                         }, (error) => {
                               console.log("deu ruim", error);
+                              alert("Dados incorretos.")
                         });
             }
       );
   }
-  cadastroInicialUsuario(user) {
+  cadastroInicialUsuario(user, cadSimples) {
       return new Promise(
             result => {
-                  this.http.post(this.baseApiPath + 'torcedor/', user,{
+                  this.http.post(this.baseApiPath + 'torcedor/', cadSimples,{
                         headers: new HttpHeaders().set('Content-Type', 'application/json')
                   })
                         .subscribe(data => {
