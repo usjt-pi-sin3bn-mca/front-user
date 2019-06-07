@@ -15,6 +15,7 @@ import { AppSeusPontosComponent } from './app-seus-pontos/app-seus-pontos';
 import { EspacoDoTorcedorComponent } from './espaco-do-torcedor/espaco-do-torcedor';
 import { MarketplaceComponent } from './marketplace/marketplace';
 import { CadastroScreenComponent } from './cadastro-screen/cadastro-screen';
+import { CadastroSocioComponent } from './cadastro-socio/cadastro-socio';
 
 @NgModule({
 	declarations: [
@@ -33,7 +34,8 @@ import { CadastroScreenComponent } from './cadastro-screen/cadastro-screen';
     AppSeusPontosComponent,
     EspacoDoTorcedorComponent,
     MarketplaceComponent,
-    CadastroScreenComponent
+    CadastroScreenComponent,
+    CadastroSocioComponent
   ],
 	imports: [],
 	exports: [
@@ -53,7 +55,8 @@ import { CadastroScreenComponent } from './cadastro-screen/cadastro-screen';
   AppSeusPontosComponent,
   EspacoDoTorcedorComponent,
   MarketplaceComponent,
-    CadastroScreenComponent
+    CadastroScreenComponent,
+    CadastroSocioComponent
   ]
 })
 export class ComponentsModule {}
