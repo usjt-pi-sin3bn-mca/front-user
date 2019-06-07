@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, ToastController } from 'ionic-angular';
 import { PlacarPage } from '../../pages/placar/placar';
 import { CuponsDeDescontoPage } from '../../pages/cupons-de-desconto/cupons-de-desconto';
 import { LojaPage } from '../../pages/loja/loja';
@@ -23,16 +23,27 @@ export class HomeMenuComponent {
   text: string;
   val = true;
 
-  constructor(public navCtrl: NavController) {
-    
-   
+  constructor(public navCtrl: NavController, public toastController : ToastController) {
+
   }
+
+  async presentToast() {
+    const toast = await this.toastController.create({
+      message: "Disponivel apenas para socios",
+      duration: 2000, 
+      position: 'bottom',
+    });
+    toast.present();
+  }
+  
   ionViewDidLoad() {
     console.log("OLHA AQUI", UsuarioLogado.getInstance().getUsuario());
   }
 
   irPlacar() {
-    this.navCtrl.setRoot(PlacarPage);
+    
+      this.navCtrl.setRoot(PlacarPage);
+    
   }
 
   irEspaco() {
@@ -40,18 +51,30 @@ export class HomeMenuComponent {
   }
 
   irCupom() {
-    this.navCtrl.setRoot(CuponsDeDescontoPage);
+    if(UsuarioLogado.getInstance().getUsuario().socio)
+      this.navCtrl.setRoot(CuponsDeDescontoPage);
+     else
+      this.presentToast();
   }
 
   irLoja() {
-    this.navCtrl.setRoot(LojaPage);
+    if(UsuarioLogado.getInstance().getUsuario().socio)
+       this.navCtrl.setRoot(LojaPage);
+    else
+      this.presentToast();
   }
 
   irPontos() {
-    this.navCtrl.setRoot(SeusPontosPage);
+    if(UsuarioLogado.getInstance().getUsuario().socio)
+      this.navCtrl.setRoot(SeusPontosPage);
+    else
+      this.presentToast();
   }
   
   irMarket() {
-    this.navCtrl.setRoot(MarketPage);
+    if(UsuarioLogado.getInstance().getUsuario().socio)
+      this.navCtrl.setRoot(MarketPage);
+    else
+      this.presentToast();
   }
 }

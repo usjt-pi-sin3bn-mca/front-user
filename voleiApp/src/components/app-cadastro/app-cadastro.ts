@@ -2,8 +2,6 @@ import { Component } from '@angular/core';
 
 import { Usuario } from '../../model/Usuario';
 import { UserProvider } from '../../providers/user/user';
-
-import { LoginPage } from '../../pages/login/login';
 import { NavController, NavParams } from 'ionic-angular';
 
 
@@ -45,16 +43,6 @@ export class AppCadastroComponent {
     console.log(arg);
     this.usuario.socio = arg;
   }
-  // cadatroSimples(usuario){
-  
-  //    if( this._userProvider.cadastroInicialUsuario(usuario))
-  //     this.navCtrl.setRoot(LoginPage);
-  //     else
-  //     console.log("deu ruim ");
-
- 
-   
-  // }
  
 
 }

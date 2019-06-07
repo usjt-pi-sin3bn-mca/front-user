@@ -17,56 +17,34 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class CadastroScreenComponent {
   usuario : any = {
-    celular: "",
-    contaAtiva:  "",
-    cpf: "",
-    dataNascimento:  "",
-    email:  "",
-    endereco:  "",
-    genero: "",
-    id: "",
     nome:"",
-    pontos: "",
-    socio: false
+    email:"",
+    senha:""
+    
   }
-
-  cadastroSimples: any = {
-    email: "",
-    senha:"",
-    nome:""
-  }
-  
   constructor(public navCtrl: NavController, public navParams: NavParams, public _userProvider : UserProvider) {
     
   }
 
-  cadastrar(socio){
-    console.log("OLHA AQUI "+ socio)
-  }
-  
-  showFields(arg) {
-    console.log(arg);
-    this.usuario.socio = arg;
-  }
+
+
   cadatroSimples(){
     console.log("OLHA AQUI "+ this.usuario)
-    this.cadastroSimples.nome = this.usuario.nome;
-    this.cadastroSimples.senha = this.usuario.senha;
-    this.cadastroSimples.email = this.usuario.email;
-     if( this._userProvider.cadastroInicialUsuario(this.usuario, this.cadastroSimples))
+   
+     if( this._userProvider.cadastroInicialUsuario(this.usuario))
       this.navCtrl.setRoot(LoginPage);
       else
       console.log("deu ruim ");
   }
  
-  selectInput(event) {
-    let selected = event.target.value;
-    if (selected == "socio") {
-      this.usuario.socio = true;
-    } else {
-      this.usuario.socio = false;
-    }
-  }
+  // selectInput(event) {
+  //   let selected = event.target.value;
+  //   if (selected == "socio") {
+  //     this.usuario.socio = true;
+  //   } else {
+  //     this.usuario.socio = false;
+  //   }
+  // }
  
 
 }

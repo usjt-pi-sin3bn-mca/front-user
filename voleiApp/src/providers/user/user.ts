@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import 'rxjs/add/operator/map';
 import { Usuario } from '../../model/Usuario';
 import { UsuarioLogado } from '../../model/UsuarioLogado';
+import { ToastController } from 'ionic-angular';
 
 
 @Injectable()
@@ -16,10 +17,25 @@ export class UserProvider  {
   headers: any;
   usuario :Usuario;
     
-  constructor(public http: HttpClient) {
+  constructor(public http: HttpClient, public toastController: ToastController) {
       
   }
-  
+  async presentToast() {
+      const toast = await this.toastController.create({
+        message: "Email ou senha inválido",
+        duration: 2000, 
+        position: 'top',
+      });
+      toast.present();
+    }
+    async sucesso() {
+      const toast = await this.toastController.create({
+        message: "Cadastro realizado com sucesso !",
+        duration: 2000, 
+        position: 'top',
+      });
+      toast.present();
+    }
    loginUsuario(user) {
       return new Promise(
             result => {
@@ -30,16 +46,16 @@ export class UserProvider  {
                              console.log(data);
                              this.usuario =  data as Usuario;
                              UsuarioLogado.getInstance().setUsuario(this.usuario);
-                             console.log("passou na request",UsuarioLogado.getInstance().getUsuario()); 
+                             console.log("passou na request"); 
                               
                         }, (error) => {
                               console.log("deu ruim", error);
-                              alert("Dados incorretos.")
+                              this.presentToast();
                         });
             }
       );
   }
-  cadastroInicialUsuario(user, cadSimples) {
+  cadastroInicialUsuario(cadSimples) {
       return new Promise(
             result => {
                   this.http.post(this.baseApiPath + 'torcedor/', cadSimples,{
@@ -47,13 +63,7 @@ export class UserProvider  {
                   })
                         .subscribe(data => {
                               console.log(data);
-                               this.id.id = data as any;
-                              console.log( user);
-                              if(user.socio){                 
-                               this.serSocio(user as Usuario,this.id.id);
-                               console.log( user as Usuario);
-                              }
-                              
+                              this.sucesso();
                         }, (error) => {
                               console.log(error);
                         });
