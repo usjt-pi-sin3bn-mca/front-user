@@ -28,14 +28,17 @@ export class LoginScreenComponent {
    
   }
 
-  fazerLogin(){
+  fazerLogin() {
     
     this._userProvider.loginUsuario(this.login); 
 
-    console.log("Teste", UsuarioLogado.getInstance().getUsuario()) 
-    if(UsuarioLogado.getInstance().getUsuario()!= null){
-      this.navCtrl.setRoot(HomePage);
-    }
+    setTimeout(() =>{
+      console.log("Teste", UsuarioLogado.getInstance().getUsuario());
+      if(UsuarioLogado.getInstance().getUsuario()!= null){
+        this.navCtrl.setRoot(HomePage);
+      }
+    }, 2000);
+    
   }
    
   goForm() {

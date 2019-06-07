@@ -1,6 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import 'rxjs/Rx';
 import 'rxjs/add/operator/map';
+import { Observable } from 'rxjs/Observable';
 
 /*
   Generated class for the DadosPlacarProvider provider.
@@ -15,6 +17,7 @@ export class DadosPlacarProvider {
   listaPartidas: any;
   partidaAtual: any;
   data: any;
+  dataRealTime: any;
 
   constructor(public http: HttpClient) {
     console.log('Testando o Provider de partidas');
@@ -23,6 +26,17 @@ export class DadosPlacarProvider {
   getToken(): string{
     return 'YXBwbGljYXRpb246bW9vU2Uyb2VzdXMyYWVyYQ==';
   }
+
+  // getPointsRealTime() {
+  //   let url = this.baseApiPath + 'partidas/';
+
+  //   return Observable.interval(2000) 
+  //     .switchMap(() => this.http.get(url).map((data) => data)).subscribe(data => {
+  //       this.data = data;
+  //       // resolve(this.data);
+  //       console.log("passou", this.data);
+  //     });
+  // }
   
   getAllPartidas() {
     let url = this.baseApiPath + 'partidas/';

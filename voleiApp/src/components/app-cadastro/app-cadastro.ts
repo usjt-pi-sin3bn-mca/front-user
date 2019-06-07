@@ -45,16 +45,16 @@ export class AppCadastroComponent {
     console.log(arg);
     this.usuario.socio = arg;
   }
-  cadatroSimples(usuario){
+  // cadatroSimples(usuario){
   
-     if( this._userProvider.cadastroInicialUsuario(usuario))
-      this.navCtrl.setRoot(LoginPage);
-      else
-      console.log("deu ruim ");
+  //    if( this._userProvider.cadastroInicialUsuario(usuario))
+  //     this.navCtrl.setRoot(LoginPage);
+  //     else
+  //     console.log("deu ruim ");
 
  
    
-  }
+  // }
  
 
 }
