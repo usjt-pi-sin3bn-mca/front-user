@@ -44,6 +44,10 @@ import { CadastroScreenComponent } from '../components/cadastro-screen/cadastro-
 import { UserProvider } from '../providers/user/user';
 import { GlobalProvider } from '../providers/global/global';
 import { PontuacaoProvider } from '../providers/pontuacao/pontuacao';
+import { CadastroSocioComponent } from '../components/cadastro-socio/cadastro-socio';
+import { CadastroSocioPage } from '../pages/cadastro-socio/cadastro-socio';
+import { ConvenioProvider } from '../providers/convenio/convenio';
+import { ExperienciaProvider } from '../providers/experiencia/experiencia';
 
 
 @NgModule({
@@ -74,7 +78,9 @@ import { PontuacaoProvider } from '../providers/pontuacao/pontuacao';
     AppSeusPontosComponent,
     EspacoDoTorcedorComponent,
     MarketplaceComponent,
-    CadastroScreenComponent
+    CadastroScreenComponent,
+    CadastroSocioComponent,
+    CadastroSocioPage
   ],
   imports: [
     BrowserModule,
@@ -110,7 +116,9 @@ import { PontuacaoProvider } from '../providers/pontuacao/pontuacao';
     AppSeusPontosComponent,
     EspacoDoTorcedorComponent,
     MarketplaceComponent,
-    CadastroScreenComponent
+    CadastroScreenComponent,
+    CadastroSocioComponent,
+    CadastroSocioPage
   ],
   providers: [
     StatusBar,
@@ -119,7 +127,9 @@ import { PontuacaoProvider } from '../providers/pontuacao/pontuacao';
     UserProvider,
     DadosPlacarProvider,
     GlobalProvider,
-    PontuacaoProvider
+    PontuacaoProvider,
+    ConvenioProvider,
+    ExperienciaProvider
   ]
 })
 export class AppModule {}

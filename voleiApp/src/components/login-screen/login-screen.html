@@ -31,4 +31,37 @@
     </form>
   </ion-list>
 
+</div><div class="bg">
+  <img id="imgLogo" src="assets/imgs/logo-usjt.png">
+  <div class="labels">
+    <label id="lblTime" type="text">O app da torcida do</label>
+    <p><label id="lblVolei" type="text">São Judas Voleibol!</label></p>
+  </div>
+
+  <ion-list>
+    <form class="form-login">
+      <ion-item no-lines  class="item-list">
+        <div  text-center>
+          <input  class ="edt_login"type="text" [(ngModel)]="login.email" name="email" style="min-width:80%;" placeholder="Digite seu email.">
+        </div>
+      </ion-item>
+
+      <ion-item no-lines  class="item-list">
+        <div  text-center>
+          <input class ="edt_login" type="password" [(ngModel)]="login.senha" name="password" style="min-width: 80%;" placeholder="Digite sua senha.">
+        </div>
+      </ion-item>
+
+
+
+
+      <button id="btnAcessar" (click)="fazerLogin()" ion-button color="dark" ion-button full
+        style="text-align:center;">ACESSAR</button>
+      <div class="campoCadastro">
+        <label id="lblPrimeiroAcesso">Primeiro Acesso?</label>
+        <a (click)="goForm()" id="linkCadastro">Cadastre-se aqui!</a>
+      </div>
+    </form>
+  </ion-list>
+
 </div>

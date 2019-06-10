@@ -26,15 +26,14 @@
     <p>Sugestões para o uso da pontuação:</p>
   </div>
 
-  <div class="img-premios">
-    <div class="caneca">
-      <img src="../../assets/imgs/caneca.jpg">
-    </div>
-    <div class="sejaatelta">
-      <img src="../../assets/imgs/sejatelta.jpg">
-    </div>
-
-  </div>
+  <ion-card  *ngFor="let item of lista" class="card-item">
+    <h2> {{item.nome}}</h2>
+    <p>{{item.data}}</p>
+    <p> {{item.custo}}</p>
+    <p> {{item.local}}</p>
+    <h3>Disponivel: {{item.qtdDisponivel}}</h3>
+    <p>Descrição: {{item.descricao}}</p>
+  </ion-card>
 
   <div class="flex ir-para-loja">
     <p> Me leve para a <a><button (click)="irLoja()" class="botao-menu-central">LOJA DA TORCIDA!</button></a> </p>

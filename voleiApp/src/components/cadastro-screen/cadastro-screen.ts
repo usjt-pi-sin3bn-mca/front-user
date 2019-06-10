@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
+<<<<<<< HEAD
 
 // import { Usuario } from '../../model/Usuario';
+=======
+>>>>>>> 938801eba9779ca604c56511b55f376f7b1c54ee
 import { UserProvider } from '../../providers/user/user';
 import { LoginPage } from '../../pages/login/login';
 import { NavController, NavParams } from 'ionic-angular';

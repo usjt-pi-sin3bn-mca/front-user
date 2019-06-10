@@ -12,6 +12,7 @@ import { LojaPage } from '../pages/loja/loja';
 import { SeusPontosPage } from '../pages/seus-pontos/seus-pontos';
 import { EspacoTorcedorPage } from '../pages/espaco-torcedor/espaco-torcedor';
 import { MarketPage } from '../pages/market/market'
+import { CadastroSocioPage } from '../pages/cadastro-socio/cadastro-socio';
 
 
 @Component({
@@ -31,7 +32,7 @@ export class MyApp {
     this.pages = [
       { title: 'Login', component: LoginPage },
       { title: 'Home', component: HomePage },
-      { title: 'Cadastro', component: CadastroPage },
+      { title: 'Ser socio', component: CadastroSocioPage },
       { title: 'Placar Online', component: PlacarPage },
       { title: 'Espaço do Torcedor', component: EspacoTorcedorPage },
       { title: "Marketplace", component: MarketPage},
