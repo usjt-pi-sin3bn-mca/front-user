@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 import { LojaPage } from '../../pages/loja/loja';
 
 import { UsuarioLogado } from '../../model/UsuarioLogado';
+import { ExperienciaProvider } from '../../providers/experiencia/experiencia';
 
 /**
  * Generated class for the AppSeusPontosComponent component.
@@ -17,8 +18,19 @@ import { UsuarioLogado } from '../../model/UsuarioLogado';
 export class AppSeusPontosComponent {
 
   pontos : any = UsuarioLogado.getInstance().getUsuario().pontos;
+  public lista:any;
+  constructor(public navCtrl: NavController, public navParams: NavParams, public _experiencias: ExperienciaProvider) {
+    this.showAll();
+    
+  }
+  async showAll() {
+    
+    this.lista = await this._experiencias.getExperiencia();
+    this.lista = this.lista.reverse();
 
-  constructor(public navCtrl: NavController) {}
+    console.log("lista", this.lista)
+  }
+
   
   irLoja() {
     this.navCtrl.setRoot(LojaPage);

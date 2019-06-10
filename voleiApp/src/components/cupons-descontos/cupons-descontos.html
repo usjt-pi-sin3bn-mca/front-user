@@ -17,16 +17,16 @@
   </div>
 
   <div class="area-descontos">
-      <div class="parceiro-descontos" *ngFor="let parceiro of parceiros">
-          <div class="parceiro-image" [ngStyle]="{'background-image': 'url(' + parceiro.imagem + ')'}"></div>
+      <div class="parceiro-descontos" *ngFor="let item of lista">
+          <!-- <div class="parceiro-image" [ngStyle]="{'background-image': 'url(' + parceiro.imagem + ')'}"></div> -->
           <!-- <img [src]="parceiro.imagem" class="icone-parceiro-desconto"> -->
       <div class="parceiro-desconto-intro">
-        <h4>{{parceiro.nome}}</h4>
-        <p>
-          {{parceiro.intro}}
-        </p>
+        <h4>{{item.nome}}</h4>
+          <p>Endereço: {{item.endereco}}</p>
+          <p>Telefone: {{item.fone}}</p>
+          <p>E-mail: {{item.email}}</p>       
       </div>
-      <div class="parceiro-cupom" (click)="gerarCupom(parceiro.nome)">
+      <div class="parceiro-cupom" (click)="gerarCupom(item.nome)">
         <p class="parceiro-cupom-texto">GERAR CUPOM</p>
       </div>
     </div>

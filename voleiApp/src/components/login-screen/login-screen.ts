@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CadastroPage } from '../../pages/cadastro/cadastro';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams, ToastController } from 'ionic-angular';
 import { UserProvider } from '../../providers/user/user';
 
 import { UsuarioLogado } from '../../model/UsuarioLogado';
@@ -24,10 +24,17 @@ export class LoginScreenComponent {
     email: "",
     senha: ""
   };
-  constructor(public navCtrl: NavController, public navParams: NavParams, public _userProvider: UserProvider ) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,public toastController: ToastController, public _userProvider: UserProvider ) {
    
   }
-
+  async erro() {
+    const toast = await this.toastController.create({
+      message: "Login ou senha Invalidos!",
+      duration: 2000, 
+      position: 'top',
+    });
+    toast.present();
+  }
   fazerLogin() {
     
     this._userProvider.loginUsuario(this.login); 
@@ -36,6 +43,9 @@ export class LoginScreenComponent {
       console.log("Teste", UsuarioLogado.getInstance().getUsuario());
       if(UsuarioLogado.getInstance().getUsuario()!= null){
         this.navCtrl.setRoot(HomePage);
+      }
+      else{
+          this.erro();
       }
     }, 2000);
     

@@ -1,6 +1,6 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import 'rxjs/add/operator/map';
+
 import { Usuario } from '../../model/Usuario';
 import { UsuarioLogado } from '../../model/UsuarioLogado';
 import { ToastController } from 'ionic-angular';
@@ -70,19 +70,40 @@ export class UserProvider  {
             }
       );
   }
-  serSocio(user, id) {
+  serSocio(user) {
         
       console.log(user );
       
       return new Promise(
             result => {
-                  this.http.put(this.baseApiPath + 'torcedor/sersocio/'+id.id, user,{
+                  this.http.put(this.baseApiPath + 'torcedor/sersocio/'+UsuarioLogado.getInstance().getUsuario().id, user,{
                         headers: new HttpHeaders().set('Content-Type', 'application/json')
                   })
                         .subscribe(data => {
                               console.log(data);
                               this.usuario =  data as Usuario;
                               console.log( this.usuario);
+                             
+                        }, (error) => {
+                              console.log(error);
+                              console.log("Deu Ruim");
+                             
+                        });
+            }
+      );
+  }
+  naoSerSocio() {
+        
+      console.log( );
+      
+      return new Promise(
+            result => {
+                  this.http.put(this.baseApiPath + 'torcedor/naosersocio/'+UsuarioLogado.getInstance().getUsuario().id,{
+                        headers: new HttpHeaders().set('Content-Type', 'application/json')
+                  })
+                        .subscribe(data => {
+                              console.log(data);
+                              
                              
                         }, (error) => {
                               console.log(error);
