@@ -5,7 +5,6 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
 import { CadastroPage } from '../pages/cadastro/cadastro';
-import { TestPage } from '../pages/test/test';
 import { LoginPage } from '../pages/login/login';
 import { PlacarPage } from '../pages/placar/placar';
 import { CuponsDeDescontoPage } from '../pages/cupons-de-desconto/cupons-de-desconto';

@@ -28,7 +28,6 @@ export class PlacarSetsComponent {
 
   constructor(public _dadosPlacar: DadosPlacarProvider, public http: HttpClient) {
     this.getPointsRealTime();
-    console.log(this.data)
   }
 
   ionViewDidLoad() {
@@ -43,12 +42,13 @@ export class PlacarSetsComponent {
         this.obj = data;
         this.obj = this.obj.reverse();
         let partidaAtual = this.obj[0];
-        this.setsPartida = partidaAtual.sets;
+        this.setsPartida = partidaAtual.sets.reverse();
         this.pontosSJ =  this.setsPartida[0].pontoA;
         this.pontosAdversario =  this.setsPartida[0].pontoB;
         this.totalSetsSJ = partidaAtual.totalSetsTimeA;
         this.totalSetsAdversario = partidaAtual.totalSetsTimeB;
       
+        console.log("sets", this.setsPartida);
         console.log("eae", this.obj);
         console.log("lllll", this.data);
       });

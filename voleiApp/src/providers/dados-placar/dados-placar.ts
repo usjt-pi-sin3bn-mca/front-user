@@ -27,16 +27,16 @@ export class DadosPlacarProvider {
     return 'YXBwbGljYXRpb246bW9vU2Uyb2VzdXMyYWVyYQ==';
   }
 
-  // getPointsRealTime() {
-  //   let url = this.baseApiPath + 'partidas/';
+  getPointsRealTime() {
+    let url = this.baseApiPath + 'partidas/';
 
-  //   return Observable.interval(2000) 
-  //     .switchMap(() => this.http.get(url).map((data) => data)).subscribe(data => {
-  //       this.data = data;
-  //       // resolve(this.data);
-  //       console.log("passou", this.data);
-  //     });
-  // }
+    return Observable.interval(2000) 
+      .switchMap(() => this.http.get(url).map((data) => data)).subscribe(data => {
+        this.data = data;
+        // resolve(this.data);
+        console.log("passou", this.data);
+      });
+  }
   
   getAllPartidas() {
     let url = this.baseApiPath + 'partidas/';

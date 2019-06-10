@@ -37,7 +37,7 @@ export class LoginScreenComponent {
       if(UsuarioLogado.getInstance().getUsuario()!= null){
         this.navCtrl.setRoot(HomePage);
       }
-    }, 2000);
+    }, 3000);
     
   }
    
