@@ -5,6 +5,7 @@ import { UserProvider } from '../../providers/user/user';
 
 import { UsuarioLogado } from '../../model/UsuarioLogado';
 import { HomePage } from '../../pages/home/home';
+import { LoginProvider } from '../../providers/login/login';
 
 
 /**
@@ -24,7 +25,7 @@ export class LoginScreenComponent {
     email: "",
     senha: ""
   };
-  constructor(public navCtrl: NavController, public navParams: NavParams,public toastController: ToastController, public _userProvider: UserProvider ) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,public toastController: ToastController, public _loginProvider: LoginProvider ) {
    
   }
   async erro() {
@@ -37,7 +38,7 @@ export class LoginScreenComponent {
   }
   fazerLogin() {
     
-    this._userProvider.loginUsuario(this.login); 
+    this._loginProvider.loginUsuario(this.login); 
 
     setTimeout(() =>{
       console.log("Teste", UsuarioLogado.getInstance().getUsuario());

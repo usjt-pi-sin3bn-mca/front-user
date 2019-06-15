@@ -10,7 +10,7 @@ import { ToastController } from 'ionic-angular';
 */
 @Injectable()
 export class ConvenioProvider  {
-  private baseApiPath = 'http://localhost:8080/api/';
+  private baseApiPath = 'http://rock.lucasduarte.club/maestro/api/';
   public apiResult: any;
  
   data: any;

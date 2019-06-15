@@ -48,6 +48,7 @@ import { CadastroSocioComponent } from '../components/cadastro-socio/cadastro-so
 import { CadastroSocioPage } from '../pages/cadastro-socio/cadastro-socio';
 import { ConvenioProvider } from '../providers/convenio/convenio';
 import { ExperienciaProvider } from '../providers/experiencia/experiencia';
+import { LoginProvider } from '../providers/login/login';
 
 
 @NgModule({
@@ -129,7 +130,8 @@ import { ExperienciaProvider } from '../providers/experiencia/experiencia';
     GlobalProvider,
     PontuacaoProvider,
     ConvenioProvider,
-    ExperienciaProvider
+    ExperienciaProvider,
+    LoginProvider
   ]
 })
 export class AppModule {}

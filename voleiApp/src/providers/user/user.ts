@@ -8,7 +8,7 @@ import { ToastController } from 'ionic-angular';
 
 @Injectable()
 export class UserProvider  {
-  private baseApiPath = 'https://maestro.lucasduarte.club/api/';
+      private baseApiPath = 'http://rock.lucasduarte.club/maestro/api/';
   public apiResult: any;
   id : any ={
         id : ""
@@ -20,14 +20,6 @@ export class UserProvider  {
   constructor(public http: HttpClient, public toastController: ToastController) {
       
   }
-  async presentToast() {
-      const toast = await this.toastController.create({
-        message: "Email ou senha inválido",
-        duration: 2000, 
-        position: 'top',
-      });
-      toast.present();
-    }
     async sucesso() {
       const toast = await this.toastController.create({
         message: "Cadastro realizado com sucesso !",
@@ -36,29 +28,10 @@ export class UserProvider  {
       });
       toast.present();
     }
-   loginUsuario(user) {
-      return new Promise(
-            result => {
-                  this.http.post(this.baseApiPath + 'torcedor/logar/', user
-            
-                  )
-                        .subscribe(data => {
-                             console.log(data);
-                             this.usuario =  data as Usuario;
-                             UsuarioLogado.getInstance().setUsuario(this.usuario);
-                             console.log("passou na request"); 
-                              
-                        }, (error) => {
-                              console.log("deu ruim", error);
-                              this.presentToast();
-                        });
-            }
-      );
-  }
   cadastroInicialUsuario(cadSimples) {
       return new Promise(
             result => {
-                  this.http.post(this.baseApiPath + 'torcedor/', cadSimples,{
+                  this.http.post(this.baseApiPath + 'torcedor', cadSimples,{
                         headers: new HttpHeaders().set('Content-Type', 'application/json')
                   })
                         .subscribe(data => {
@@ -77,9 +50,17 @@ export class UserProvider  {
       return new Promise(
             result => {
                   this.http.put(this.baseApiPath + 'torcedor/sersocio/'+UsuarioLogado.getInstance().getUsuario().id, user,{
-                        headers: new HttpHeaders().set('Content-Type', 'application/json')
+                        headers: new HttpHeaders()
+                        .set('Content-Type', 'application/json')
+                        .set('Cookie', 'JSESSIONID=6721B6B071D46B23ED4C0BA623DE896D')
+                        .set('Access-Control-Allow-Credentials' , 'true',)
+                        .set('Acess-Control-Allow-Origin', '*')
+                        .set('Access-Control-Expose-Headers', '*')
+                        
+
                   })
                         .subscribe(data => {
+
                               console.log(data);
                               this.usuario =  data as Usuario;
                               console.log( this.usuario);
