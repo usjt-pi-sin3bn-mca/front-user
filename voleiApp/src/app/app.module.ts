@@ -49,6 +49,7 @@ import { CadastroSocioPage } from '../pages/cadastro-socio/cadastro-socio';
 import { ConvenioProvider } from '../providers/convenio/convenio';
 import { ExperienciaProvider } from '../providers/experiencia/experiencia';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
+import { LoginProvider } from '../providers/login/login';
 
 
 @NgModule({
@@ -131,7 +132,8 @@ import { BarcodeScanner } from '@ionic-native/barcode-scanner';
     GlobalProvider,
     PontuacaoProvider,
     ConvenioProvider,
-    ExperienciaProvider
+    ExperienciaProvider,
+    LoginProvider
   ]
 })
 export class AppModule {}

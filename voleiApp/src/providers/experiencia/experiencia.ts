@@ -10,8 +10,7 @@ import { ToastController } from 'ionic-angular';
 */
 @Injectable()
 export class ExperienciaProvider  {
-  private baseApiPath = 'https://maestro.lucasduarte.club/api/';
-  public apiResult: any;
+  private baseApiPath = 'http://rock.lucasduarte.club/maestro/api/';
   
   data: any;
   headers: any;
