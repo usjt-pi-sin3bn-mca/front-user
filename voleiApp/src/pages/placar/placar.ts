@@ -20,8 +20,12 @@ export class PlacarPage {
   result: any;
   partidaAtual: any;
   emAndamento: boolean = false;
+  loading: boolean = true;
   
   constructor(public navCtrl: NavController, public navParams: NavParams, public _dadosPlacar: DadosPlacarProvider) {
+    setTimeout(() => {
+      this.loading = false;
+    }, 2000);
   }
 
   ionViewDidLoad() {

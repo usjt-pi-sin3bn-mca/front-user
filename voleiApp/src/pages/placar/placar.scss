@@ -1,23 +1,48 @@
-page-placar{
-    overflow-y:auto;
+page-placar {
+  overflow-y: auto;
 }
-.position-central{
-    border-radius: 25px;
-    background-color: white;
-    margin: 10px auto;  
-    padding: 5px;
 
-    h2 {
-        padding: 20px;
-        font-size: 18px;
-    }
+.loading {
+  position: fixed;
+  background: rgba(10, 27, 74, 0.85);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
 
-    .animated-spin {
-        animation: spin 1.5s infinite linear;
-    }
+  p {
+    color: #fff;
+    font-size: 20px;
+    margin-top: 15px;
+  }
+}
+
+.animated-spin {
+  animation: spin 1.5s infinite linear;
+}
+
+.position-central {
+  border-radius: 25px;
+  background-color: white;
+  margin: 10px auto;
+  padding: 5px;
+
+  h2 {
+    padding: 20px;
+    font-size: 18px;
+  }
 }
 
 @keyframes spin {
-    from {transform:rotate(0deg);}
-    to {transform:rotate(360deg);}
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

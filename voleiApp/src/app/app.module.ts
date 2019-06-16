@@ -48,6 +48,7 @@ import { CadastroSocioComponent } from '../components/cadastro-socio/cadastro-so
 import { CadastroSocioPage } from '../pages/cadastro-socio/cadastro-socio';
 import { ConvenioProvider } from '../providers/convenio/convenio';
 import { ExperienciaProvider } from '../providers/experiencia/experiencia';
+import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 import { LoginProvider } from '../providers/login/login';
 
 
@@ -124,6 +125,7 @@ import { LoginProvider } from '../providers/login/login';
   providers: [
     StatusBar,
     SplashScreen,
+    BarcodeScanner,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     UserProvider,
     DadosPlacarProvider,

@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+// import { QRScanner, QRScannerStatus } from '@ionic-native/qr-scanner/ngx';
+import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 
 /**
  * Generated class for the SeusPontosPage page.
@@ -15,11 +17,23 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class SeusPontosPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private barcodeScanner: BarcodeScanner) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad SeusPontosPage');
+    // Optionally request the permission early
+
   }
 
+
+  openScanner() {
+    this.barcodeScanner.scan().then(barcodeData => {
+      console.log('Barcode data', barcodeData);
+      let resultado = JSON.stringify(barcodeData);
+      alert("Resultado do scan: " + barcodeData.text);
+     }).catch(err => {
+         console.log('Error', err);
+     });
+  }
 }
