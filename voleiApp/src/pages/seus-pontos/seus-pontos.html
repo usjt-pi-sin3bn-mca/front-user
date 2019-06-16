@@ -7,9 +7,9 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>seus-pontos</ion-title>
+    <ion-title>Pontos do Torcedor</ion-title>
     <button ion-button menuToggle>
-        <ion-icon name="menu"></ion-icon>
+      <ion-icon name="menu"></ion-icon>
     </button>
   </ion-navbar>
 
@@ -17,13 +17,17 @@
 
 
 <ion-content>
-    <app-header></app-header>
+  <app-header></app-header>
 
-    <div class="position-central">
-      <!-- //componentes aqui -->
-      <app-seus-pontos></app-seus-pontos>
-     <footer-div-central></footer-div-central>
-   </div>
-  
-   <footer-app-volei></footer-app-volei>
+  <div class="position-central">
+    <!-- //componentes aqui -->
+    <app-seus-pontos></app-seus-pontos>
+    <div style="display: flex; justify-content: center;">
+      <button ion-button (click)="openScanner()">Abrir Scanner</button>
+    </div>
+    <footer-div-central></footer-div-central>
+
+  </div>
+
+  <footer-app-volei></footer-app-volei>
 </ion-content>

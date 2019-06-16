@@ -17,7 +17,10 @@
 <ion-content>
 
   <app-header></app-header>
-
+  <div class="loading" *ngIf="loading">
+    <img src="../../assets/imgs/volleyball.png" class="animated-spin">
+    <p>Carregando</p>
+  </div>
   <div class="position-central" *ngIf="emAndamento">
     <!-- //componentes aqui -->
    <placar-online></placar-online>
@@ -27,7 +30,7 @@
  </div>
 
  <div class="position-central" *ngIf="!emAndamento" align="center">
-   <img src="../../assets/imgs/volleyball.png" alt="Volleyball" class="animated-spin">
+   <img src="../../assets/imgs/volleyball.png" alt="Volleyball">
    <h2>Não há partidas em andamento.</h2>
  </div>
 
