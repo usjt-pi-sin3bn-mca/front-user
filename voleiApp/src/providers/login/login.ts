@@ -20,7 +20,8 @@ export class LoginProvider {
   }
   data: any;
   headers: any;
-  usuario: Usuario
+  usuario: Usuario;
+  idUsuario: any;
 
   constructor(public http: HttpClient, public toastController: ToastController) {
 
@@ -38,15 +39,15 @@ export class LoginProvider {
     return new Promise(
       result => {
         // this.http.post(this.baseApiPath + '?userType=torcedor', user,{
-          this.http.post(this.baseApiPath , user,{
+        this.http.post(this.baseApiPath, user, {
           headers: new HttpHeaders()
-          .set('Content-Type', 'application/json')
-          .set('Access-Control-Allow-Credentials' , 'true',)
-          .set('Acess-Control-Allow-Origin', '*')
-          .set("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept")
-          
+            .set('Content-Type', 'application/json')
+            .set('Access-Control-Allow-Credentials', 'true')
+            .set('Acess-Control-Allow-Origin', '*')
+            .set("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept")
 
-    })
+
+        })
           .subscribe(data => {
             console.log(data);
             this.usuario = data as Usuario;
