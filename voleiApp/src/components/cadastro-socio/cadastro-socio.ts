@@ -19,6 +19,7 @@ export class CadastroSocioComponent {
 
   text: string;
   socio: any ={
+    email:"",
     cpf:"",
     dataNascimento:"",
     endereco:"",
@@ -33,7 +34,7 @@ export class CadastroSocioComponent {
     this.text = 'Hello World';
   }
   serSocio(){
-    
+    this.socio.email = UsuarioLogado.getInstance().getUsuario().email;
     this._userProvider.serSocio(this.socio);
     this.navCtrl.setRoot(LoginPage);
   }

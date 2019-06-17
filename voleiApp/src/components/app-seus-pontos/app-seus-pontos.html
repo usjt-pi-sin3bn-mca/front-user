@@ -26,7 +26,7 @@
     <p>Sugestões para o uso da pontuação:</p>
   </div>
 
-  <ion-card  *ngFor="let item of lista" class="card-item">
+  <ion-card  *ngFor="let item of lista" (click)="adquirir(item.id)" class="card-item">
     <h2> {{item.nome}}</h2>
     <p>{{item.data}}</p>
     <p> {{item.custo}}</p>

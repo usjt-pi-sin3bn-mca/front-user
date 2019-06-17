@@ -4,6 +4,7 @@ import { LojaPage } from '../../pages/loja/loja';
 
 import { UsuarioLogado } from '../../model/UsuarioLogado';
 import { ExperienciaProvider } from '../../providers/experiencia/experiencia';
+import { PontuacaoProvider } from '../../providers/pontuacao/pontuacao';
 
 /**
  * Generated class for the AppSeusPontosComponent component.
@@ -17,21 +18,32 @@ import { ExperienciaProvider } from '../../providers/experiencia/experiencia';
 })
 export class AppSeusPontosComponent {
 
-  pontos : any = UsuarioLogado.getInstance().getUsuario().pontos;
+  pontos : any ;
   public lista:any;
-  constructor(public navCtrl: NavController, public navParams: NavParams, public _experiencias: ExperienciaProvider) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public _experiencias: ExperienciaProvider, public pontuacaoProvider : PontuacaoProvider ) {
     this.showAll();
+    this.pontuacao();
     
   }
   async showAll() {
     
-    this.lista = await this._experiencias.getExperiencia();
+    this.lista = await this._experiencias.getExperiencia()
     this.lista = this.lista.reverse();
 
     console.log("lista", this.lista)
   }
+  pontuacao() {
+    this.pontuacaoProvider.getPontos(); 
+    setTimeout(() =>{
+       this.pontos = PontuacaoProvider.pontos
+    }, 2000);
+    
+  }
 
-  
+  adquirir(idExperiencia){
+    this._experiencias.adquirirExperiencia(idExperiencia);
+    this.pontuacao();
+  }
   irLoja() {
     this.navCtrl.setRoot(LojaPage);
   }

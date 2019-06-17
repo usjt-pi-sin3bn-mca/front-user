@@ -12,7 +12,8 @@ import { UsuarioLogado } from '../../model/UsuarioLogado';
 */
 @Injectable()
 export class LoginProvider {
-  private baseApiPath = 'http://rock.lucasduarte.club/api/login';
+  // private baseApiPath = 'http://rock.lucasduarte.club/api/login';
+  private baseApiPath = 'http://maestro.lucasduarte.club/api/torcedor/logar/';
   public apiResult: any;
   id: any = {
     id: ""
@@ -36,9 +37,16 @@ export class LoginProvider {
   loginUsuario(user) {
     return new Promise(
       result => {
-        this.http.post(this.baseApiPath + '?userType=torcedor', user, {
-          headers: new HttpHeaders().set('Content-Type', 'application/json') })
+        // this.http.post(this.baseApiPath + '?userType=torcedor', user,{
+          this.http.post(this.baseApiPath , user,{
+          headers: new HttpHeaders()
+          .set('Content-Type', 'application/json')
+          .set('Access-Control-Allow-Credentials' , 'true',)
+          .set('Acess-Control-Allow-Origin', '*')
+          .set("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept")
+          
 
+    })
           .subscribe(data => {
             console.log(data);
             this.usuario = data as Usuario;
