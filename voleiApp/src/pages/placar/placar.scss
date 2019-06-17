@@ -1,6 +1,6 @@
 page-placar {
   overflow-y: auto;
-}
+
 
 .loading {
   position: fixed;
@@ -26,11 +26,13 @@ page-placar {
   animation: spin 1.5s infinite linear;
 }
 
-.position-central {
+.position-central{
+  width: 92%;
   border-radius: 25px;
   background-color: white;
-  margin: 10px auto;
+  margin: 10px auto;  
   padding: 5px;
+
 
   h2 {
     padding: 20px;
@@ -45,4 +47,5 @@ page-placar {
   to {
     transform: rotate(360deg);
   }
+}
 }
