@@ -50,6 +50,7 @@ import { ConvenioProvider } from '../providers/convenio/convenio';
 import { ExperienciaProvider } from '../providers/experiencia/experiencia';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 import { LoginProvider } from '../providers/login/login';
+import { Http } from '@angular/http';
 
 
 @NgModule({
@@ -133,6 +134,7 @@ import { LoginProvider } from '../providers/login/login';
     PontuacaoProvider,
     ConvenioProvider,
     ExperienciaProvider,
+    Http,
     LoginProvider
   ]
 })
