@@ -2,6 +2,8 @@ marketplace {
         .item {
             flex: 1;
             flex-basis: 50%;
+
+          
             &.shop {
                 flex: 2;
                 flex-basis: 100%;
@@ -10,6 +12,7 @@ marketplace {
         .icone-market {
             display: flex;
             position: absolute;
+            
             width: 45px;
             height: 45px;
         }
@@ -73,7 +76,8 @@ marketplace {
             .product {
                 max-width: 125px;
                 margin: 10px;
-                border-radius: 25px;
+                opacity: 0.2; ;
+               
                 text-align: center;
                 p {
                     margin:0;
@@ -82,6 +86,7 @@ marketplace {
                 img {
                     width: 125px;
                     height: 125px;
+                    
                 }
                 .product-name {
                     font-size:14px;

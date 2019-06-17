@@ -22,7 +22,7 @@ export class EspacoDoTorcedorComponent {
   }
   async presentToast() {
     const toast = await this.toastController.create({
-      message: "Em desenvolvimento",
+      message: "Indisponivel",
       duration: 2000, 
       position: 'bottom',
     });
