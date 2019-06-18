@@ -10,17 +10,14 @@ import { UsuarioLogado } from '../../model/UsuarioLogado';
   and Angular DI.
 */
 @Injectable()
-export class ExperienciaProvider  {
+export class ExperienciaProvider {
   // private baseApiPath = 'http://rock.lucasduarte.club/maestro/api/';
   private baseApiPath = 'http://maestro.lucasduarte.club/api/';
-  
+
   data: any;
   headers: any;
-  
- 
-    
   constructor(public http: HttpClient, public toastController: ToastController) {
-      
+
   }
   async sucesso() {
     const toast = await this.toastController.create({
@@ -32,7 +29,7 @@ export class ExperienciaProvider  {
   }
   async erro() {
     const toast = await this.toastController.create({
-      message: "Pontos insuficientes!!",
+      message: "Experiência adquirida com sucesso!",
       duration: 2000,
       position: 'top',
     });
@@ -51,33 +48,32 @@ export class ExperienciaProvider  {
 
           resolve(this.data);
         },
-        (error) => {
-          console.log("Erro no provider Experiencia");
-        });
+          (error) => {
+            console.log("Erro no provider Experiencia");
+          });
     });
 
   }
   adquirirExperiencia(id_experiencia) {
-            
-    console.log( );
-    
+    this.getExperiencia();
+
     return new Promise(
-          result => {
-                this.http.put(this.baseApiPath + 'experiencia/adquirir/'+id_experiencia+"/"+UsuarioLogado.getInstance().getUsuario().id,{
-                      headers: new HttpHeaders().set('Content-Type', 'application/json')
-                })
-                      .subscribe(data => {
-                            console.log(data);
-                            this.sucesso();
-                            
-                      
-                      }, (error) => {
-                            console.log(error);
-                            this.erro();
-                      
-                      });
-          }
+      result => {
+        this.http.put(this.baseApiPath + 'experiencia/adquirir/' + id_experiencia + "/" + UsuarioLogado.getInstance().getUsuario().id, {
+          headers: new HttpHeaders().set('Content-Type', 'application/json')
+        })
+          .subscribe(data => {
+            console.log(data);
+            this.sucesso();
+
+
+          }, (error) => {
+            console.log(error);
+            this.erro();
+
+          });
+      }
     );
-}
+  }
 
 }
