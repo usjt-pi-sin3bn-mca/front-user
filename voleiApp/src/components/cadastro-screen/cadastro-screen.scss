@@ -27,6 +27,16 @@ cadastro-screen {
             letter-spacing: 1px;
         }
 
+        .back-home {
+            display: flex;
+            justify-content: center;
+            color: white;
+            a:active {
+                background-color: grey;
+                
+            }
+        }
+
         .imgUser {
             margin-left: auto;
             margin-right: auto;
@@ -82,4 +92,4 @@ cadastro-screen {
             }
         }
     }
-}
+}   
